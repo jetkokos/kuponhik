@@ -7,6 +7,7 @@ html {
 	display: flex;
 	flex-direction: column;
 	font-family: "Roboto", Arial, sans-serif; 
+	font-weight: 400;
 	box-sizing: border-box;
 	overflow-x: hidden;
 	background-color: #eaeef0;
@@ -37,7 +38,14 @@ h2 {
 	font-weight: 700;
 	font-family: "Roboto", Arial, sans-serif; 
 }
-
+h3 {
+	font-size: 15px;
+	line-height: 40px;
+	font-family: "Roboto";
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+}
 p {
 	margin: 0;
 	font-size: 13px;
@@ -87,6 +95,10 @@ ul {
 	height: 16px;
 }
 
+.fs13lh18 {
+	font-size: 13px;
+	line-height: 18px;
+}
 
 /*_________________________________________________________________________________________*/
 @media screen and (min-width: 750px) {
@@ -94,11 +106,22 @@ ul {
 		font-size: 45px;
 		line-height: 51px;
 	}
+	h2 {
+		font-size: 31px;
+		line-height: 41px;
+	}
+	p {
+		font-size: 16px;
+		line-height: 24px;
+	}
 	.container {
 		width: 100%;
-		max-width: 720px;
-		padding: 0 15px 0 15px;
+		max-width: 750px;
 		display: flex;
+	}
+	h3 {
+		font-size: 18px;
+		line-height: 40px;
 	}
 }
 

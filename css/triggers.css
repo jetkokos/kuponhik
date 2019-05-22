@@ -29,6 +29,8 @@
         flex-direction: column;
         align-items: flex-start;
     }
+    .triggers .container {
+    }
 }
 
 @media screen and (min-width: 1360px) {

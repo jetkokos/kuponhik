@@ -1,0 +1,156 @@
+.legal {
+    padding: 40px 15px 50px;
+    background-color: #243942;
+}
+.legal_main {
+    padding: 0 15px;
+}
+.legal_info {
+    padding: 0 15px;
+}
+.legal_menu {
+    text-align: center;
+}
+.legal_docs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.legal p {
+    margin: 20px 0 50px;
+}
+.legal ul {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.legal ul li {
+    max-width: 140px;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+}
+.legal ul a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.legal ul li a[href="mailto:vopros@kuponchik.by"] {
+    line-height: 40px;
+    color: #ffb200;
+}
+.legal h3 {
+    color: #435a64;
+    border-bottom: 1px solid #435a64;
+}
+.legal .button {
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    line-height: 25px;
+    color: #ffb200;
+    background-color: #435a64;
+    font-weight: 400;
+    width: 131px;
+    height: 25px;
+    border-radius: 12px;
+}
+.lg_info {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lg_info a {
+    font-size: 13px;
+    line-height: 19px;
+    color: #7c868b;
+}
+
+/*_________________________________________________________________________________________*/
+@media screen and (min-width: 750px) {
+    .legal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .legal .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .legal_menu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .legal_info {
+        min-width: 720px;
+    }
+    .legal .button {
+        margin: 35px auto;
+    }
+    .lg_info {
+        min-width: 630px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .lg_info a {
+        margin-right: 25px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .legal h3 {
+        width: 170px;
+        text-align: left;
+    }
+    .legal ul li {
+        max-width: 170px;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: left;
+    }
+    .legal ul {
+        align-items: flex-start;
+    }
+    .legal .button {
+        margin-bottom: 40px;
+        width: 164px;
+        height: 31px;
+        border-radius: 15px;
+        font-size: 16px;
+        line-height: 31px;
+    }
+}
+
+/*_________________________________________________________________________________________*/
+@media screen and (min-width: 1360px) {
+    .legal .container {
+        min-width: 1100px;
+    }
+    .legal_info {
+        min-width: 1070px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .legal_menu {
+        margin-right: 190px;
+    }
+    .legal_docs {
+        align-items: flex-end;
+    }
+    .legal .button {
+        margin: 35px 0 10px;
+    }
+    .lg_info {
+        flex-direction: column;
+        min-width: 230px;
+        align-items: flex-end;
+    }
+    .lg_info a {
+        margin: 0;
+        
+    }
+}
