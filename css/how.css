@@ -67,7 +67,7 @@
     }
 }
 
-@media screen and (min-width: 1360px) {
+@media screen and (min-width: 1160px) {
     .how .container {
         min-width: 1100px;
     }

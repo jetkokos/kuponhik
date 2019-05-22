@@ -16,6 +16,15 @@
     width: 43px;
     height: 43px;
 }
+.footer ul li {
+    margin-right: 10px;
+    display: inline;
+    width: 43px;
+    height: 43px;
+}
+.footer ul li:hover {
+    opacity: 0.5;
+}
 .footer p{
     font-size: 13px;
     line-height: 22px;
