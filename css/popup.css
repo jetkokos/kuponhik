@@ -4,12 +4,19 @@
 .popup-register {
     visibility: hidden;
 }
+.popup-forget_password {
+	visibility: hidden;
+}
+.popup-forget_password-success {
+	visibility: hidden;
+}
 .popup-feedback {
 	visibility: hidden;
 }
 .popup-open {
 	position: fixed;
-	width: 100vw;
+	width: 99vw;                    /*для исключения скачка из-за учета ширины полосы прокрутки в хроме 18px)*/
+	width: calc(100vw - 18px);
 	overflow: hidden;
     touch-action: none;
 }
@@ -48,6 +55,14 @@
     align-items: center;
     justify-content: flex-start;
     z-index: 300;
+}
+.popup-container p {
+	max-width: 360px;
+	font-size: 19px;
+	line-height: 25px;
+	color: #000000;
+	font-family: "Roboto";
+	font-weight: 400;
 }
 
 .popup-container .form_helper {
@@ -111,6 +126,7 @@
 
 .popup-container input:hover, .popup-container input:active {
 	border: 2px solid #ffba1c;
+	padding-left: 28px;
 }
 
 .popup-container input:invalid:not(:placeholder-shown) {
@@ -142,6 +158,10 @@
 }
 .popup-container .button-feedback {
 	width: 250px; 
+}
+
+.popup-container .button-send {
+	width: 193px; 
 }
 .close {
 	margin: 0;
@@ -221,7 +241,9 @@
 	color: #000000;
 	font-family: "Roboto";
 	font-weight: 400;
-	
+}
+.popup-forget_password-success p {
+	margin-bottom: 30px;
 }
 
 
@@ -231,8 +253,13 @@
         padding: 50px 40px 40px;
     }
     .popup-container h6 {
-        font-size: 31px;
-    }
+        font-size: 20px;
+	}
+	/*
+	.popup-open {
+		width: 99vw; 
+	}
+	*/
     .popup-container input {
         width: 405px;
         height: 62px;
@@ -250,6 +277,9 @@
 	}
 	.popup-container .button-feedback {
 		width: 250px; 
+	}
+	.popup-container .button-send {
+		width: 193px; 
 	}
     .popup-container .form_helper {
         bottom: 60px;

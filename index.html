@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/legal.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/popup.css">
+	<link rel="stylesheet" href="css/loader.css">
 	<title>Купончик</title>
 </head>
 <body>
@@ -216,9 +217,34 @@
 				</div>
 			</form>
 			<div class="form_helper">
-				<a class="yellow" href="#">Забыли пароль?</a>
+				<a class="yellow popup-forget_password_ref" href="#">Забыли пароль?</a>
 				<a class="yellow popup-register_ref" href="#">Регистрация</a>
 			</div>
+		</div>
+	</div>
+	<div class="popup popup-forget_password">
+		<div class="overlay"></div>
+		<div class="popup-container">
+			<button href="#" class="close">&times;</button>
+			<h6>Вспомнить пароль</h6>
+			<form class="form formForgetPassword">
+				<input type="e-mail" name="e_mail" placeholder="E-mail">
+				<span class="form_warning"></span>
+				<p>Мы отправим пароль на указанный Вами адрес</p>
+				<div class="popup-container_enter">
+					<span class="form_warning"></span>
+					<button name="submit" class="button button-send bg_yellow popup-forget_password-success_ref">Отправить<span></span></button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="popup popup-forget_password-success">
+		<div class="overlay"></div>
+		<div class="popup-container">
+			<button href="#" class="close">&times;</button>
+			<form class="form">
+				<p class="center">Мы отправили подтверждение на указанный Вами электронный адрес</p>
+			</form>
 		</div>
 	</div>
 	<div class="popup popup-register">
@@ -229,7 +255,7 @@
 			<form class="form formRegister">
 				<input type="e-mail" name="e_mail" placeholder="E-mail">
 				<span class="form_warning"></span>
-				<input type="text" name="tel" placeholder="Телефон">
+				<input type="tel" name="tel" placeholder="Телефон">
 				<span class="form_warning"></span>
 				<input type="text" name="name" placeholder="Имя">
 				<span class="form_warning"></span>
@@ -267,10 +293,13 @@
 			</form>
 		</div>
 	</div>
+	<!--Loader-->
+	<div class="lds-dual-ring"></div>
+	<!--Scripts-->
 	<script src="js/jquery-3.3.1.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/wow.js"></script>
-	<script src="js/SmoothScroll.js"></script>
+	<!-- <script src="js/SmoothScroll.js"></script> -->
 	<script src="js/script.js"></script>
 </body>
 </html>

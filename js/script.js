@@ -5,13 +5,26 @@ $(document).ready(function(){
       $('.popup-enter').addClass('visible');
       $('body').addClass('popup-open');
     });
-
+    $(document).on("click", '.popup-forget_password_ref', function(event) {
+      event.preventDefault();
+      $('.visible').removeClass('visible');
+      $('.popup-forget_password').addClass('visible');
+      $('body').addClass('popup-open');
+    });
+    
+    $(document).on("click", '.popup-forget_password-success_ref', function(event) {
+      event.preventDefault();
+      $('.visible').removeClass('visible');
+      $('.popup-forget_password-success').addClass('visible');
+      $('body').addClass('popup-open');
+    });
     $(document).on("click", '.popup-register_ref', function(event) {
       event.preventDefault();
       $('.visible').removeClass('visible');
       $('.popup-register').addClass('visible');
       $('body').addClass('popup-open');
     });
+    
 
     $(document).on("click", '.popup-feedback_ref', function(event) {
       event.preventDefault();
@@ -37,11 +50,11 @@ $(document).ready(function(){
       }
     });
 
-/*Маска ввода телефона 
+/*Phone mask*/
   $(function(){
     $("input[type='tel']").mask("+7(999) 999-9999");
   });
-*/
+
 /*Плавный переход к якорям*/
   $(document).on("click", 'a[href^="#nav"]', function() {
     var el = $(this).attr('href');
