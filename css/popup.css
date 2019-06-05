@@ -4,6 +4,9 @@
 .popup-register {
     visibility: hidden;
 }
+.popup-register-success {
+    visibility: hidden;
+}
 .popup-forget_password {
 	visibility: hidden;
 }

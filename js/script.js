@@ -65,6 +65,43 @@ $(document).ready(function(){
   });
 
 
+  //Отправка данных на почту
+/*
+  $('.formRegister').submit(function(event) {
+    var errors = false;
+    $(this).find('span').empty();
+    $(this).find('input').each(function() {
+      if ($.trim( $(this).val() ) == '') {
+        errors = true;
+        $(this).css('border', '1px solid rgb(231,22,54)');
+        $(this).next().text('обязательно для заполнения');
+      }
+    });
+    if (!errors) {
+      var data = $(this).serialize();
+      $.ajax({
+        url: 'send.php',
+        type: 'POST',
+        data: data,
+        beforeSend: function() {
+          $('.lds-dual-ring"').addClass('visible');
+        },
+        success: function() {
+          $('.lds-dual-ring"').removeClass('visible');
+          $('.form').find('input').val('');
+          $('.popup').removeClass('visible');
+          $('.popup-register-success').addClass('visible');
+        },
+        error: function() {
+          console.log('Ошибка файла обработчика');
+        }
+      })
+    }
+    return false;
+  });
+*/
+  
+
 });
 
 
