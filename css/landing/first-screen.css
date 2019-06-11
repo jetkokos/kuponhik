@@ -61,14 +61,14 @@ h1 {
 	margin: 10px auto 0;
 	height: 260px;
 	width: 320px;
-	background: url('../img/men.png') no-repeat 100%;
+	background: url('../../img/men.png') no-repeat 100%;
 	background-size: cover;
 }
 
 /*_________________________________________________________________________________________*/
 @media screen and (min-width: 750px) {
     .first-screen {
-        background: url('../img/bg_first_screen.png') no-repeat 50% 5%;
+        background: url('../../img/bg_first_screen.png') no-repeat 50% 5%;
     }
     .header {
 		width: 100%;
