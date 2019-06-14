@@ -100,6 +100,45 @@ $(document).ready(function(){
     ]
   });
 
+  $('.kupon_slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    asNavFor: '.kupon_slider_nav',
+    responsive: [
+      {
+        breakpoint: 750,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+
+        }
+      }
+    ]
+    
+  });
+
+  $('.kupon_slider_nav').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: '.kupon_slider',
+    focusOnSelect: true,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 750,
+        settings: 'unslick'
+      }
+    ]
+    
+    
+  });
+ 
+
  
 
 

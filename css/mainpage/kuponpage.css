@@ -1,6 +1,7 @@
 .breadcrumbs_block {
     display: flex;
     flex-direction: column;
+    align-items: center;
     
 }
 .breadcrumbs {
@@ -39,11 +40,23 @@
     font-family: "Roboto";
     font-weight: 700;
 }
-.kupon .photo-slider img {
-    width: 290px;
-    height: 161px;
+.kupon_photo_slider {
+    width: 320px;
+}
+.kupon_photo_slider {
+    width: 320px;
+}
+.kupon_slider div{
+    width: 320px;
+}
+.kupon_slider img {
+    width: 320px;
     border-radius: 5px;
 }
+
+
+
+
 .kupon_add_block {
     display: flex;
     flex-direction: column;
@@ -197,6 +210,9 @@
 }
 .cards-block-inner h2{
     margin-bottom: 40px;
+    padding-left: 15px;
+    display: flex;
+    align-self: flex-start;
 }
 .cards-carousel .discount,
 .cards-carousel .whenwhere {
@@ -236,12 +252,20 @@
     background-image: url('../../img/kupon_photos/phone.png');
 }
 
+.kupon_slider_nav {
+    display: none;
+}
+
+
 
 
 
 @media screen and (min-width: 750px) {
     .kupon h2 {
         max-width: 750px;
+    }
+    .kupon_photo_slider {
+        width: 720px;
     }
     .kupon_block-inner {
         display: flex;
@@ -262,6 +286,62 @@
     .map_zone .contacts {
         margin-left: 15px;
     }
+    .kupon_add {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        margin-top: 30px;
+    }
+    .kupon_slider div{
+        width: 720px;
+        height: 400px;
+    }
+    .kupon_slider img {
+        width: 720px;
+        border-radius: 5px;
+    }
+    .slick-arrow {
+        margin: 10px;
+        width: 44px;
+        height: 44px;
+        border-radius: 22px;
+        background-color: #ffffff;
+        border: none;
+        outline: none;
+        display: flex;
+        cursor: pointer;
+    }
+    .slick-prev {
+        position: absolute;
+        z-index: 999999;
+        left:0%;
+        top: 50%;
+        background-image: url('../../img/kupon_photos/left.png');
+        background-repeat: no-repeat;
+        background-position: 40% 50%;
+    }
+    .slick-next {
+        position: absolute;
+        right:0;
+        top: 50%;
+        background-image: url('../../img/kupon_photos/right.png');
+        background-repeat: no-repeat;
+        background-position: 60% 50%;
+    }
+    .kupon_slider_nav {
+        margin-top: 30px;
+    }
+    .kupon_slider_nav div{
+        cursor: pointer;
+    }
+    .kupon_slider_nav img {
+        max-width: 170px;
+        border-radius: 5px;
+    }
+
+
+
+
 }
 
 @media screen and (min-width: 1160px) {
@@ -271,12 +351,34 @@
         align-items: flex-start;
      }
      .kupon-menu {
-         max-width: 750px;
+         max-width: 650px;
      }
      .kupon-map {
          margin-left: 30px;
      }
      .map_zone {
         flex-direction: column;
+    }
+    .kupon_photo_slider {
+        width: 650px;
+    }
+    .kupon_slider div{
+        width: 650px;
+    }
+    .kupon_slider img {
+        width: 650px;
+        border-radius: 5px;
+    }
+    .slick-next, .slick-prev {
+        top: 45%;
+    }
+    .kupon_add_block {
+        min-width: 1100px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .kupon_add {
+        margin-left: 30px;
+        display: flex;
     }
 }
