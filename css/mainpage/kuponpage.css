@@ -1,0 +1,282 @@
+.breadcrumbs_block {
+    display: flex;
+    flex-direction: column;
+    
+}
+.breadcrumbs {
+    padding: 0 15px;
+}
+.breadcrumbs p {
+    font-size: 13px;
+    line-height: 60px;
+    color: #7c868b;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+.kupon {
+    padding: 0 15px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.kupon_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.kupon_block-inner {
+    padding-bottom: 60px;
+    border-bottom: 1px solid #c9d4db;
+}
+.kupon h2 {
+    min-width: 260px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    line-height: 23px;
+    color: #243942;
+    font-family: "Roboto";
+    font-weight: 700;
+}
+.kupon .photo-slider img {
+    width: 290px;
+    height: 161px;
+    border-radius: 5px;
+}
+.kupon_add_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.kupon .address {
+    margin-bottom: 15px;
+    font-size: 13px;
+    line-height: 22px;
+    color: #7c868b;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+.kupon .round {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 2px;
+    border-radius: 6px;
+    background-color: #2899f8;
+}
+
+.kupon .kupon_desc {
+    font-size: 17px;
+    line-height: 21px;
+    color: #243942;
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+.kupon .economy, .kupon .purchased, .kupon .social p {
+    font-size: 13px;
+    line-height: 22px;
+    color: #7c868b;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+.button_zone {
+    
+    display: flex;
+    align-items: center;
+}
+.button_zone .heart img {
+    margin-left: 20px;
+    width: 28px;
+    height: 25px;
+}
+.kupon .get_kupon {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    width: 230px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #ffb200;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 50px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.kupon .time {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #c9d4db;
+    border-bottom: 1px solid #c9d4db;
+    font-size: 17px;
+    line-height: 45px;
+    color: #7c868b;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+.kupon .time::before {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+    background-image: url('../../img/kupon_photos/kupon_watch.png');
+    content: '';
+}
+
+.kupon .social-refs {
+    display: flex;
+}
+
+.kupon .social-refs a img {
+    width: 36px;
+    height: 36px;
+    padding: 5px;
+}
+
+
+.kupon_info .points{
+    padding: 0 15px;
+    min-width: 294px;
+    font-size: 13px;
+    line-height: 19px;
+    color: #000000;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+.kupon_info .ul-menu {
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    line-height: 40px;
+    color: #243942;
+    font-family: "Roboto";
+    font-weight: 500;
+    background-color: #f3f6f8;
+    border: 1px solid #e3eaf1;
+    text-transform: uppercase;
+}
+
+.kupon_info .ul-menu a {
+    text-decoration: none;
+}
+.kupon_info .ul-menu a:visited {
+    color: #243942;
+}
+.kupon_info .ul-menu a:active {
+    border-bottom: 4px solid #243942;
+}
+
+.kupon_info .kupon-map .ul-menu {
+    justify-content: flex-start;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.kupon-map .map img {
+    max-width: 320px;
+}
+
+.kupon-map .contacts p{
+    display: flex;
+    align-items: center;
+    margin: 5px 0 ;
+    padding: 0 15px;
+}
+
+.cards-block-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cards-block-inner h2{
+    margin-bottom: 40px;
+}
+.cards-carousel .discount,
+.cards-carousel .whenwhere {
+    display: none;
+}
+
+.round {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border-radius: 6px;
+    background-color: #2899f8;
+}
+
+.map_target {
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    margin-right: 5px;
+    background-image: url('../../img/kupon_photos/map_target.png');
+}
+
+.map_watch {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background-image: url('../../img/kupon_photos/watch_yellow.png');
+}
+
+.map_phone {
+    display: inline-block;
+    width: 13px;
+    height: 20px;
+    margin-right: 5px;
+    background-image: url('../../img/kupon_photos/phone.png');
+}
+
+
+
+
+@media screen and (min-width: 750px) {
+    .kupon h2 {
+        max-width: 750px;
+    }
+    .kupon_block-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .kupon_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+     }
+    .map_zone {
+        display: flex;
+    }
+    .kupon-map .map img {
+        max-width: 400px;
+    }
+    .map_zone .contacts {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (min-width: 1160px) {
+    .kupon_info {
+        display: flex;
+        flex-direction: row; 
+        align-items: flex-start;
+     }
+     .kupon-menu {
+         max-width: 750px;
+     }
+     .kupon-map {
+         margin-left: 30px;
+     }
+     .map_zone {
+        flex-direction: column;
+    }
+}

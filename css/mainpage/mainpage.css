@@ -1,0 +1,318 @@
+.main-container {
+    background-color: #fff;
+}
+.header {
+    margin-bottom: 0;
+}
+.header .logo img {
+    height: 30px;
+}
+.header .first-750, .header .second-750 {
+display: none;
+}
+.header .first-1920, .header .second-1920 {
+    display: none;
+    }
+.header .first-320 {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1c2e36;
+    border-bottom: 1px solid #43565f;
+}
+.header .second-320 {
+    padding: 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #243942;
+}
+.header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 13px;
+    color: #c9d4db;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+.header a img {
+    padding-right: 10px;
+}
+.header .location {
+    text-decoration: underline;
+}
+.filters {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filters .button {
+    margin-top: 15px;
+    height: 36px;
+    border-radius: 5px;
+    background-color: none;
+    font-size: 14px;
+    line-height: 36px;
+    color: none;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+.button_sort {
+    width: 138px;
+    color: #7c868b;
+    background-color: #f3f6f8;
+}
+.button_district {
+    width: 148px;
+    color: #7c868b;
+    background-color: #f3f6f8;
+}
+.button_map{
+    width: 247px;
+    color: #ffffff;
+    background-color: #ffb200;
+}
+
+.cards-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cards {
+    margin: 0 auto;
+    display: block;
+}
+.card {
+    margin-bottom: 25px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.card .photo {
+    position: relative;
+}
+.card .photo img {
+    width: 289px;
+    height: 161px;
+    border-radius: 5px;
+}
+.discount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 700;
+    width: 69px;
+    height: 46px;
+    position: absolute;
+    bottom: 4px;
+    left: 4%;
+    background-color: #ffb200;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.whenwhere {
+    display: none;
+}
+.card .text {
+    align-self: flex-start;
+    width: 289px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+.card .additional {
+    margin-top: 35px;
+    padding: 0 15px;
+    width: 288px;
+    height: 40px;
+    background-color: #f3f6f8;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+}
+.card .additional .more {
+    font-size: 16px;
+    line-height: 40px;
+    color: #ffb200;
+    font-family: "Roboto";
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.card .additional .purchased {
+    font-size: 14px;
+    padding-right: 20px;
+    line-height: 40px;
+    color: #7c868b;
+    font-family: "Roboto";
+    font-weight: 400;
+    border-right: 1px solid #c9d4db;
+}
+.card .additional .favourite {
+    display: flex;
+    align-items: center;
+    
+}
+.review-block {
+    padding: 20px 0 40px;
+    background-color: #f3f6f8; 
+}
+.slider-brands {
+    min-width: 300px;
+}
+.reviews {
+    padding: 0 15px;
+}
+.reviews h2 {
+    margin-bottom: 20px;
+}
+
+.brand {
+    display: flex!important;
+    width: 240px!important;
+    height: 200px!important;
+    justify-content: center;
+    align-items: center;
+    margin: 0 12px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+.brand img {
+    width: 105px;
+    height: 105px;
+}
+
+
+
+/*______________________________________________________________________________*/
+@media screen and (min-width: 750px) {
+    .menu .container {
+        max-width: none;
+    }
+    .header {
+        display: flex;
+        background-color: #243942;
+        padding: 0;
+        margin: 0;
+    }
+    .header .first-320, .header .second-320 {
+        display: none;
+    }
+    .header .first-750, .header .second-750 {
+        display: flex;
+    }
+    .header a {
+        padding: 15px 20px;
+        font-size: 15px;
+    }
+    .header .second-750 a {
+        border-left: 1px solid #43565f;
+    }
+    .filters {
+        margin: 20px 15px 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .button_sort {
+        width: 148px;
+    }
+    .button_map{
+        width: 187px;
+    }
+    .cards {
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .card {
+        min-height: 375px;
+        margin-bottom: 25px;
+        margin-right: 30px;
+    }
+    .card .photo img {
+        width: 345px;
+        height: 192px;
+        border-radius: 5px;
+    }
+    .card .text {
+        width: 345px;
+    }
+    .whenwhere {
+        width: 240px;
+        height: 46px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 4%;
+        bottom: 4px;
+        font-size: 14px;
+        color: #ffffff;
+        font-family: "Roboto";
+        font-weight: 400;
+    }
+    .whenwhere::before {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+        background-image: url('../../img/mainpage/watch.png');
+        content: '';
+    }
+    .whenwhere .round {
+        display: block;
+        width: 12px;
+        height: 12px;
+        margin: 0 5px 0 10px;
+        border-radius: 6px;
+        background-color: #2899f8;
+    }
+    .review-block{
+        display: flex;
+        justify-content: center;
+    }
+    .slider-brands {
+        max-width: 750px;
+    }
+    
+}
+
+@media screen and (min-width: 1160px) {
+    .header .first-750, .header .second-750 {
+        display: none;
+    }
+    .header .first-1920, .header .second-1920 {
+        display: flex;
+    }
+    .card .photo img {
+        width: 359px;
+        height: 200px;  
+        border-radius: 5px;
+    }
+    .card .text {
+        width: 359px;
+    }
+    .slider-brands {
+        max-width: 1200px;
+    }
+}
