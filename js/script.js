@@ -97,21 +97,21 @@ $(document).on("click", '.search_button', function(event) {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     appendDots: false,
     responsive: [
       {
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
-          arrows: true
+          arrows: false
         }
       },
       {
         breakpoint: 750,
         settings: {
           slidesToShow: 2,
-          arrows: true
+          arrows: false
         }
       },
       {
