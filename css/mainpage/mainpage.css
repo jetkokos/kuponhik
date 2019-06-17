@@ -476,8 +476,11 @@ span.quantity {
         font-weight: 400;
         text-transform: uppercase;
     }
-    .menu1920 li a:hover {
+    .menu1920 li a:active {
         border-bottom: 4px solid #243942;
+    }
+    .menu1920 li a:hover {
+        color: #ffb300;
     }
 
     .search-block {

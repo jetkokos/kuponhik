@@ -191,9 +191,11 @@
     padding-left: 15px;
     margin-bottom: 20px;
 }
+.map {
+}
 
-.kupon-map .map img {
-    max-width: 320px;
+.kupon-map .map iframe {
+    width: 100vw;
 }
 
 .kupon-map .contacts p{
@@ -280,8 +282,8 @@
     .map_zone {
         display: flex;
     }
-    .kupon-map .map img {
-        max-width: 400px;
+    .kupon-map .map iframe {
+        width: 40vw;
     }
     .map_zone .contacts {
         margin-left: 15px;
@@ -380,5 +382,14 @@
     .kupon_add {
         margin-left: 30px;
         display: flex;
+    }
+    .kupon-map .map iframe {
+        width: 30vw;
+    }
+    .map_zone .contacts {
+        margin-left: 0;
+    }
+    .kupon-map .contacts p {
+        padding-left: 0;
     }
 }
