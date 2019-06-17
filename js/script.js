@@ -42,13 +42,40 @@ $(document).ready(function(){
         $('body').removeClass('popup-open');
       });
 
-    $(document).keyup(function(e) {
+    $(document).keyup(function(e) {            /*По Esc выключение попапов и поиска*/
       if (e.keyCode === 27) {
+        $('.searchbar').hide();
+        $('.dropdown-inside').hide();
         $('.visible').removeClass('visible');
         $('body').removeClass('popup-open');
         return false;
       }
     });
+/*Меню*/ 
+/*Включение меню по клику на Каталог*/
+$(document).on("click", '.catalog', function(event) {
+  event.preventDefault();
+  $('.dropdown-inside').toggle();
+});
+/*Закрытие по клику вне меню*/
+/*
+$(document).mouseup(function (e){ // событие клика по веб-документу
+  var div = $(".dropdown-inside"); // тут указываем ID элемента
+  if (!div.is(e.target) // если клик был не по нашему блоку
+      && div.has(e.target).length === 0) { // и не по его дочерним элементам
+    div.hide(); // скрываем его
+  }
+});
+*/
+/*Включение поиска по клику на Поиск*/
+$(document).on("click", '.search_button', function(event) {
+  event.preventDefault();
+  $('.search-block').toggle();
+});
+/*Закрытие по клику вне панели поиска*/
+
+
+
 
 /*Phone mask*/
   $(function(){

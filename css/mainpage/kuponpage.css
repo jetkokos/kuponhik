@@ -313,7 +313,7 @@
     }
     .slick-prev {
         position: absolute;
-        z-index: 999999;
+        z-index: 999;
         left:0%;
         top: 50%;
         background-image: url('../../img/kupon_photos/left.png');
