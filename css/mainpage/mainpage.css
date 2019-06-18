@@ -22,7 +22,6 @@ display: none;
     border-bottom: 1px solid #43565f;
 }
 .header .second-320 {
-    padding: 20px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,6 +35,7 @@ display: none;
     color: #c9d4db;
     font-family: "Roboto";
     font-weight: 400;
+    padding: 15px;
 }
 .header a img {
     padding-right: 10px;
@@ -51,6 +51,7 @@ display: none;
 }
 
 .filters .button {
+    padding: 0;
     margin-top: 15px;
     height: 36px;
     border-radius: 5px;
@@ -63,6 +64,7 @@ display: none;
 }
 .button_sort {
     width: 138px;
+    margin-right: 8px;
     color: #7c868b;
     background-color: #f3f6f8;
 }
@@ -71,11 +73,104 @@ display: none;
     color: #7c868b;
     background-color: #f3f6f8;
 }
+.icon_bottom {
+    display: inline-block;
+    margin-left: 10px;
+    width: 13px;
+    height: 8px;
+    background: url('../../img/mainpage/bottom.png') no-repeat 50% ;
+}
+.icon_top {
+    display: inline-block;
+    margin-left: 10px;
+    width: 13px;
+    height: 8px;
+    background: url('../../img/mainpage/top.png') no-repeat 50% ;
+}
 .button_map{
-    width: 247px;
+    width: 100%;
     color: #ffffff;
     background-color: #ffb200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.button_map:hover {
+    background-color: #e8a300;
+}
+.icon_marker{
+    display: inline-block;
+    margin-right: 10px;
+    width: 12px;
+    height: 16px;
+    line-height: 36px;
+    background: url('../../img/mainpage/marker_white.png') no-repeat 50% ;
+}
+
+
+.filters-sort {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.button_sort {
+    width: 148px;
+}
+
+
+.sorting-ul {
+    display: none;
+}
+.district-ul {
+    display: none;
+}
+
+
+.filters ul {
+    list-style: none;
+    flex-direction: column;
+    margin-top: 0;
+}
+.filters ul li {
+    background-color: #f2f6f9;
+    margin-right: 8px;
+}
+.filters ul li a {
+    box-sizing: border-box;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    color: #7c868b;
+    font-family: "Roboto";
+    font-weight: 400;
+    border-radius: 5px;
+}
+.filters .district-ul li a {
+    margin-right: 0;
+}
+
+.filters ul li a:hover {
+    background-color: #ffb200;
+}
+.filters ul li a:active {
+    font-weight: bold;
+    color: #000000;
+    background-color: #f2f6f9;
+}
+
+.district-ul input {
+    box-sizing: border-box;
+    padding: 10px;
+    display: block;
+    margin: 8px auto;
+    width: 130px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #e3eaf2;
+    border-radius: 5px;
+}
+
 
 .cards-block {
     display: flex;
@@ -96,18 +191,36 @@ display: none;
 }
 .card .photo {
     position: relative;
+    cursor: pointer;
 }
 .card .photo img {
     width: 289px;
     height: 161px;
     border-radius: 5px;
 }
+.card .card-description {
+    display: none;
+    box-sizing: border-box;
+    height: 98%;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    background-color: rgb(0,0,0,0.6);
+}
+.card .card-description p {
+    font-size: 13px;
+    line-height: 18px;
+    color: #fff;
+    font-family: "Roboto";
+    font-weight: 400;
+}
 .discount {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    font-size: 20px;
     color: #ffffff;
     font-family: "Roboto";
     font-weight: 700;
@@ -135,7 +248,7 @@ display: none;
 .card .additional {
     margin-top: 35px;
     padding: 0 15px;
-    width: 288px;
+   /* width: 288px;*/
     height: 40px;
     background-color: #f3f6f8;
     border-radius: 5px;
@@ -145,7 +258,7 @@ display: none;
     box-sizing: border-box;
     
 }
-.card .additional .more {
+.card .additional .more a {
     font-size: 16px;
     line-height: 40px;
     color: #ffb200;
@@ -153,23 +266,41 @@ display: none;
     font-weight: 400;
     text-decoration: underline;
 }
+.card .additional .more a:visited {
+    color: #ffb200;
+}
+
 
 .card .additional .purchased {
     font-size: 14px;
-    padding-right: 20px;
     line-height: 40px;
     color: #7c868b;
     font-family: "Roboto";
     font-weight: 400;
-    border-right: 1px solid #c9d4db;
 }
 .card .additional .favourite {
+    position: relative;
     display: flex;
     align-items: center;
-    
+    width: 24px;
+    height: 21px;
+    background: url('../../img/mainpage/heart.png') no-repeat 50%;
+
+}
+.card .additional .favourite:before {
+    content:'';
+    position: absolute;
+    right: 40px;
+    top: -5px;
+    height: 30px;
+    border-left: 1px solid #c9d4db;
+}
+.card .additional .favourite:hover {
+    background: url('../../img/mainpage/heart_full.png') no-repeat 50%;
 }
 .review-block {
-    padding: 20px 0 40px;
+    padding: 20px 0;
+    margin-bottom: 40px;
     background-color: #f3f6f8; 
 }
 .slider-brands {
@@ -284,6 +415,9 @@ span.quantity {
     right: 3px;
     top: 3px;
 }
+.search_icon:hover {
+    background-color: #e8a300;
+}
 .search_logo {
     display: none;
 }
@@ -306,24 +440,20 @@ span.quantity {
         display: flex;
     }
     .header a {
-        padding: 15px 20px;
         font-size: 15px;
     }
     .header .second-750 a {
         border-left: 1px solid #43565f;
     }
     .filters {
-        margin: 20px 15px 30px;
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-    .button_sort {
-        width: 148px;
+    .filters .container {
+        justify-content: space-between;
     }
-    .button_map{
-        width: 187px;
-    }
+   
     .cards {
         padding: 0 15px;
         display: flex;
@@ -383,6 +513,9 @@ span.quantity {
     .slider-brands {
         max-width: 750px;
     }
+    .button_map {
+        width: 250px;
+    }
     /*____________________________________MENU_____________________________________*/
     .dropdown-inside {
     top: 45px;
@@ -429,7 +562,6 @@ span.quantity {
         padding-right: 0px;
     }
     .header .second-750 a {
-        padding-right: 20px;
     }
     .menu {
         display: flex;
@@ -468,7 +600,6 @@ span.quantity {
         margin-top: 0;
     }
     .menu1920 li a {
-        padding: 20px;
         text-decoration: none;
         line-height: 60px;
         color: #243942;
@@ -493,7 +624,6 @@ span.quantity {
     }
     .search_logo {
         display: block;
-        margin-right: 20px;
     }
     
 }

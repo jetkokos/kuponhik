@@ -42,7 +42,7 @@ $(document).ready(function(){
         $('body').removeClass('popup-open');
       });
 
-    $(document).keyup(function(e) {            /*По Esc выключение попапов и поиска*/
+    $(document).keyup(function(e) {            /*По Esc выключение попапов, каталога и поиска*/
       if (e.keyCode === 27) {
         $('.searchbar').hide();
         $('.dropdown-inside').hide();
@@ -52,29 +52,44 @@ $(document).ready(function(){
       }
     });
 /*Меню*/ 
-/*Включение меню по клику на Каталог*/
+/*Раскрытие меню по клику на Каталог*/
 $(document).on("click", '.catalog', function(event) {
   event.preventDefault();
   $('.dropdown-inside').toggle();
 });
 /*Закрытие по клику вне меню*/
 /*
-$(document).mouseup(function (e){ // событие клика по веб-документу
-  var div = $(".dropdown-inside"); // тут указываем ID элемента
-  if (!div.is(e.target) // если клик был не по нашему блоку
-      && div.has(e.target).length === 0) { // и не по его дочерним элементам
-    div.hide(); // скрываем его
+$(document).mouseup(function (e){ 
+  var div = $(".dropdown-inside"); // 
+  if (!div.is(e.target) // 
+      && div.has(e.target).length === 0) { // 
+    div.hide(); 
   }
 });
 */
-/*Включение поиска по клику на Поиск*/
+/*Раскрытие инпута поиска по клику на Поиск*/
 $(document).on("click", '.search_button', function(event) {
   event.preventDefault();
   $('.search-block').toggle();
 });
 /*Закрытие по клику вне панели поиска*/
+/*Раскрытие меню по клику на Сортировать и выбрать район*/
+$(document).on("click", '.button_sort', function(event) {
+  event.preventDefault();
+  $('.sorting-ul').toggle();
+  $('.button_sort .icon_bottom').toggleClass('icon_top');
 
-
+});
+$(document).on("click", '.button_district', function(event) {
+  event.preventDefault();
+  $('.district-ul').toggle();
+  $('.button_district .icon_bottom').toggleClass('icon_top');
+});
+/*Затенение и описание при наведении на фото карточки*/ 
+$('.photo').hover(function(event) {
+  event.preventDefault();
+  $(this).find('.card-description').toggle();
+});
 
 
 /*Phone mask*/
