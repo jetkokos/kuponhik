@@ -223,6 +223,33 @@
 				</div>
 			</div>
 		</div>
+		<div class="map-block">
+			<a class="button button_list" href="#"> <span class="icon_burger"></span>К списку</a>
+			<script type="text/javascript" charset="utf-8" async 
+			src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A643647aa0d8299bfba2c2a8950f195ec2c9104a20f74b9b62347e192570b273e&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false;"></script>
+			
+			<div class="card">
+				<div class="photo">
+					<img src="img/mainpage/template_photo1.png" alt="photo">
+					<div class="card-description">
+						<p>Краткое описание предложения.</p>
+						<p>Бесплатное раннее заселение возможно с 09:00 при наличии свободных номеров. Бесплатный поздний выезд возможен 
+							до 14:00 при наличии свободных номеров</p>
+					</div>
+					<div class="discount">-54%</div>
+					<div class="whenwhere">10:12:<span class="yellow">34</span> <span class="round"></span> Пл. Якуба Колоса</div>
+				</div>
+				<div class="text">
+					<p>5 минут полета в аэротрубе для одного человека в любой день недели в аэродинамическом комплексе
+						I Can Fly в ТЦ «Авиапарк»</p>
+				</div>
+				<div class="additional">
+					<div class="more"><a href="#">подробнее</a></div>
+					<div class="purchased">приобретено: 12</div>
+					<a href="#" class="favourite"></a>
+				</div>
+			</div>
+		</div>
 		<div class="cards-block">
 			<div class="container">
 				<div class="cards">
@@ -584,21 +611,29 @@
 	</div>
 	<!--popups-->
 	<div class="popup popup-feedback">
+		<div class="overlay"></div>
+		<div class="popup-container">
+			<button href="#" class="close">&times;</button>
+			<h6>Обратная связь</h6>
+			<form class="form form_feedback">
+				<input type="text" name="name" placeholder="Имя">
+				<span class="form_warning"></span>
+				<input type="text" name="tel" placeholder="Телефон">
+				<span class="form_warning"></span>
+				<input class="input_question" name="question" type="text" placeholder="Ваш вопрос">
+				<div class="popup-container_enter">
+					<span class="form_warning"></span>
+					<button name="submit" class="button button-feedback bg_yellow">Отправить<span></span></button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="popup popup-choose-city">
 			<div class="overlay"></div>
 			<div class="popup-container">
 				<button href="#" class="close">&times;</button>
-				<h6>Обратная связь</h6>
-				<form class="form form_feedback">
-					<input type="text" name="name" placeholder="Имя">
-					<span class="form_warning"></span>
-					<input type="text" name="tel" placeholder="Телефон">
-					<span class="form_warning"></span>
-					<input class="input_question" name="question" type="text" placeholder="Ваш вопрос">
-					<div class="popup-container_enter">
-						<span class="form_warning"></span>
-						<button name="submit" class="button button-feedback bg_yellow">Отправить<span></span></button>
-					</div>
-				</form>
+				<h6>Выберите город</h6>
+				
 			</div>
 		</div>
 	<!--Scripts-->

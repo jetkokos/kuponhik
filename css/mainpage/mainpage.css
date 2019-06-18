@@ -14,7 +14,7 @@ display: none;
     display: none;
     }
 .header .first-320 {
-    padding: 10px 15px;
+    padding: 0 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -177,6 +177,45 @@ display: none;
     flex-direction: column;
     align-items: center;
 }
+.map-block {
+    display: none;
+    position: relative;
+}
+.map-block .container {
+    max-width: 100%;
+}
+.map-block .button {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 5%;
+    padding: 0 15px;
+    background-color: #ffb200;
+    color: #fff;
+    border-radius: 5px;
+    width: 90px;
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 400;
+    z-index: 2;
+}
+.map-block .icon_burger {
+    display: inline-block;
+    border-bottom: 9px double #fff; 
+    border-top: 3px solid #fff; 
+    content:"";
+    height: 3px; 
+    width: 20px;
+    margin-right: 10px;
+}
+.map-block .card {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    max-width: 350px;
+    background-color: #fff;
+}
 .cards {
     margin: 0 auto;
     display: block;
@@ -244,6 +283,9 @@ display: none;
     color: #000000;
     font-family: "Roboto";
     font-weight: 400;
+}
+.card .text p{
+    margin: 10px;
 }
 .card .additional {
     margin-top: 35px;
@@ -367,7 +409,13 @@ span.quantity {
     display: none;
 }
 
-
+/*______________________________Popup_______________________________________*/
+.popup-choose-city {
+    display: none;
+}
+.popup-feedback {
+    display: none;
+}
 
 /*_______________________________Searchbar____________________________________*/
 .search-block {
@@ -625,5 +673,10 @@ span.quantity {
     .search_logo {
         display: block;
     }
+    .map-block {
+        max-width: 1200px;
+        margin: 40px auto 0px;
+    }
+    
     
 }

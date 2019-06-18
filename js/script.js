@@ -90,7 +90,21 @@ $('.photo').hover(function(event) {
   event.preventDefault();
   $(this).find('.card-description').toggle();
 });
-
+/*Включение предложений на карте*/
+$(document).on("click", '.button_map', function(event) {
+  event.preventDefault();
+  $('.cards-block').toggle();
+  $('.filters').toggle();
+  $('.map-block').toggle();
+  
+});
+/*Включение предложений обратно списком*/
+$(document).on("click", '.button_list', function(event) {
+  event.preventDefault();
+  $('.cards-block').toggle();
+  $('.filters').toggle();
+  $('.map-block').toggle();
+});
 
 /*Phone mask*/
   $(function(){
