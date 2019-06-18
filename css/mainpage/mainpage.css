@@ -14,7 +14,7 @@ display: none;
     display: none;
     }
 .header .first-320 {
-    padding: 0 15px;
+    /*padding: 0 15px;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,7 +35,7 @@ display: none;
     color: #c9d4db;
     font-family: "Roboto";
     font-weight: 400;
-    padding: 15px;
+    padding: 10px;
 }
 .header a img {
     padding-right: 10px;
@@ -375,8 +375,8 @@ display: none;
     position: absolute;
     overflow: hidden;
     z-index:1000;
-    margin-left: -15px;
-    margin-top: 15px;
+    margin-left: 0px;
+    margin-top: 0px;
     display: none;
   }
   
@@ -409,13 +409,6 @@ span.quantity {
     display: none;
 }
 
-/*______________________________Popup_______________________________________*/
-.popup-choose-city {
-    display: none;
-}
-.popup-feedback {
-    display: none;
-}
 
 /*_______________________________Searchbar____________________________________*/
 .search-block {
@@ -448,8 +441,12 @@ span.quantity {
     border: none;
     outline: none!important;
     box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
-
+    margin-left: 15px;
 }
+.searchbar input:focus {
+    border: 2px solid #e8a300;
+}
+
 .search_icon {
     width: 36px;
     height: 36px;
@@ -460,14 +457,46 @@ span.quantity {
     background-size: 60%;
     background-position: 50% 50%;
     position: absolute;
-    right: 3px;
-    top: 3px;
+    right: 5px;
+    top: 4px;
 }
 .search_icon:hover {
     background-color: #e8a300;
 }
 .search_logo {
     display: none;
+}
+
+/*______________________________________CITIES____________________________*/
+.cities_mobile_block {
+    display: block;
+    margin: 0;
+
+}
+.cities_mobile_block ul {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+}
+.cities_mobile li:first-child a{
+    color: #feb200;
+    padding: 10px 15px;
+    border-bottom: 30px solid #f2f6f9;
+}
+.cities_mobile li a{
+    display: block;
+    text-decoration: none;
+    font-size: 13px;
+    color: #000000;
+    background-color: #fff;
+    border-bottom: 1px solid #d2d6d7;
+    font-family: "Roboto";
+    font-weight: 400;
+    padding: 15px;
+}
+.cities_mobile li a:hover{
+    color: #e8a300;
 }
 
 /*______________________________________________________________________________*/
@@ -566,9 +595,13 @@ span.quantity {
     }
     /*____________________________________MENU_____________________________________*/
     .dropdown-inside {
-    top: 45px;
+    top: 35px;
     left: 15px;
     }
+    .dropdown-inside {
+        margin-left: -15px;
+        margin-top: 15px;
+      }
     
     .dropdown-inside li {
     }
@@ -592,6 +625,12 @@ span.quantity {
     .header .first-1920, .header .second-1920 {
         display: flex;
     }
+    .cities_mobile_block {
+        display: none;
+    }
+    .cards {
+        padding: 0;
+    }
     .card {
         margin-right: 0px;
     }
@@ -606,7 +645,15 @@ span.quantity {
     .slider-brands {
         max-width: 1200px;
     }
+    .header {
+        padding-left: 0;
+    }
+    .header .location {
+        padding-left: 0;
+    }
     .header a {
+        padding-top: 15px;
+        padding-bottom: 15px;
         padding-right: 0px;
     }
     .header .second-750 a {
@@ -638,6 +685,14 @@ span.quantity {
     .filters .container {
         justify-content: space-between;
     }
+    .button_district {
+        width: 250px;
+    }
+
+    .district-ul input {
+        width: 215px;
+    }
+    
     
     .menu1920 {
         width: 100%;
@@ -648,6 +703,7 @@ span.quantity {
         margin-top: 0;
     }
     .menu1920 li a {
+        padding: 15px 10px;
         text-decoration: none;
         line-height: 60px;
         color: #243942;
@@ -677,6 +733,7 @@ span.quantity {
         max-width: 1200px;
         margin: 40px auto 0px;
     }
+    
     
     
 }

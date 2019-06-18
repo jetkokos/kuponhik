@@ -35,7 +35,7 @@
 									<li>
 										<a href="#">Еда <span class="quantity">45</span></a>
 										<a class="button_bottom"><img src="img/mainpage/bottom.png" alt=""></a>
-										<ul class="dropdown-inside2">
+										<!--<ul class="dropdown-inside2">
 											<li>
 												<a href="#">Европейская кухня <span class="quantity">85</span></a>
 											</li>
@@ -48,7 +48,7 @@
 											<li>
 												<a href="#">Японская кухня<span class="quantity">15</span></a>
 											</li>
-										</ul>
+										</ul>-->
 									</li>
 									<li>
 										<a href="#">Красота <span class="quantity">56</span></a>
@@ -140,7 +140,7 @@
 						</ul>
 					</div>
 					<div class="first-1920">
-						<a href="#" class="location"><img src="img/mainpage/location.png" alt="location">Минск</a>
+						<a href="#" class="location popup-choose-city_ref"><img src="img/mainpage/location.png" alt="location">Минск</a>
 					</div>
 					<div class="second-1920">
 						<a href="tel:+233252352345" class="phone"><img src="img/mainpage/phone.png" alt="phone">+23 (325) 235-23-45</a>
@@ -194,6 +194,37 @@
 					</li>
 				</ul>
 			</div>
+		</div>
+		<div class="cities_mobile_block">
+			<ul class="cities_mobile">
+				<li>
+					<a href="#">Определять автоматически</a>
+				</li>
+				<li>
+					<a href="#">Минск</a>
+				</li>
+				<li>
+					<a href="#">Гомель</a>
+				</li>
+				<li>
+					<a href="#">Минск</a>
+				</li>
+				<li>
+					<a href="#">Гомель</a>
+				</li>
+				<li>
+					<a href="#">Минск</a>
+				</li>
+				<li>
+					<a href="#">Гомель</a>
+				</li>
+				<li>
+					<a href="#">Минск</a>
+				</li>
+				<li>
+					<a href="#">Гомель</a>
+				</li>
+			</ul>
 		</div>
 		<div class="filters">
 			<div class="container">
@@ -250,7 +281,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="cards-block">
+		<div class="cards-block cards-block_map">
 			<div class="container">
 				<div class="cards">
 					<div class="card">
@@ -632,15 +663,136 @@
 			<div class="overlay"></div>
 			<div class="popup-container">
 				<button href="#" class="close">&times;</button>
-				<h6>Выберите город</h6>
+				<h5>Выберите город</h5>
+				<div class="current_city_block">
+					<div class="current_city">
+						<p><span class="icon_marker"></span>Текущий город: <span class="bold">Минск</span></p>
+					</div>
+					<div class="auto_choose">
+						<p> <a href=""><span class="icon_marker_arrow"></span>Определить автоматически</a> </p>
+					</div>
+				</div>
+				<div class="searchbar">
+					<input type="text" value="Введите название города">
+					<a class="search_icon" href="#"></a>
+				</div>
 				
+				<div class="cities">
+					<div class="big_cities">
+						<ul>
+							<li><a href="#"><span class="bold">Минск</span></a></li>
+							<li><a href="#"><span class="bold">Гомель</span></a></li>
+							<li><a href="#">Воронеж</a></li>
+							<li><a href="#">Волгоград</a></li>
+							<li><a href="#">Екатеринбург</a></li>
+							<li><a href="#">Калининград</a></li>
+							<li><a href="#">Новосибирск</a></li>
+							<li><a href="#">Омск</a></li>
+							<li><a href="#">Самара</a></li>
+							<li><a href="#">Челябинск</a></li>
+							<li><a href="#">Ярославль</a></li>
+						</ul>
+					</div>
+					<div class="all_cities">
+						<div class="big_cities_column">
+							<ul>
+								<li><span class="cities_litera">А</span> 
+									<ul>
+										<li><a href="#">Астрахань</a></li>
+										<li><a href="#">Архангельск</a></li>
+									</ul>
+								</li>
+								<li><span class="cities_litera">Б</span> 
+									<ul>
+										<li><a href="#">Брянск</a></li> 
+										<li><a href="#">Белгород</a></li> 
+										<li><a href="#">Барнаул</a></li> 
+									</ul>
+								</li>
+								<li><span class="cities_litera">В</span> 
+									<ul>
+										<li><a href="#">Вологда</a></li>
+										<li><a href="#">Волжский</a></li>
+										<li><a href="#">Владимир</a></li>
+										<li><a href="#">Владивосток</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="big_cities_column">
+								<ul>
+									<li><span class="cities_litera">И</span> 
+										<ul>
+											<li><a href="#">Иркутск</a></li>
+											<li><a href="#">Ижевск</a></li>
+											<li><a href="#">Иваново</a></li>
+										</ul>
+									</li>
+									<li><span class="cities_litera">К</span> 
+										<ul>
+											<li><a href="#">Курск</a></li>	
+											<li><a href="#">Красноярск</a></li>	
+											<li><a href="#">Краснодар</a></li>	
+											<li><a href="#">Кострома</a></li>	
+										</ul>
+									</li>
+									<li><span class="cities_litera">Н</span> 
+										<ul>
+											<li><a href="#">Новокузнецк</a></li>
+											<li><a href="#">Нижний Тагил</a></li>
+										</ul>
+									</li>
+								</ul>
+						</div>
+						<div class="big_cities_column">
+							<ul>
+								<li><span class="cities_litera">П</span> 
+									<ul>
+										<li><a href="#">Пермь</a></li>
+										<li><a href="#">Пенза</a></li>
+									</ul>
+								</li>
+								<li><span class="cities_litera">С</span> 
+									<ul>
+										<li><a href="#">Стерлитамак</a></li> 
+										<li><a href="#">Ставрополь</a></li> 
+										<li><a href="#">Сочи</a></li> 
+										<li><a href="#">Смоленск</a></li> 
+										<li><a href="#">Саратов</a></li> 
+									</ul>
+								</li>
+								<li><span class="cities_litera">П</span> 
+									<ul>
+										<li><a href="#">Тюмень</a></li>
+										<li><a href="#">Тула</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="big_cities_column">
+								<ul>
+									<li><span class="cities_litera">У</span> 
+										<ul>
+											<li><a href="#">Иркутск</a></li>
+											<li><a href="#">Ижевск</a></li>
+											<li><a href="#">Иваново</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						
+					</div>
+				</div>
 			</div>
-		</div>
+	</div>
 	<!--Scripts-->
 	<script src="js/jquery-3.3.1.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/wow.js"></script>
 	<script src="js/slick.js"></script>
 	<script src="js/script.js"></script>
+	<script id="__bs_script__">//<![CDATA[
+		document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace("HOST", location.hostname));
+	//]]></script>
 </body>
 </html>

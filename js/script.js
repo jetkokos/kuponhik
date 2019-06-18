@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  //Плавное появление Popup
+  //появление Popup
     $(document).on("click", '.popup-enter_ref', function(event) {
       event.preventDefault();
       $('.popup-enter').addClass('visible');
@@ -31,16 +31,22 @@ $(document).ready(function(){
       $('.popup-feedback').addClass('visible');
       $('body').addClass('popup-open');
     });
+    $(document).on("click", '.popup-choose-city_ref', function(event) {
+      event.preventDefault();
+      $('.popup-choose-city').addClass('visible');
+      $('body').addClass('popup-open');
+    });
 
+    /*Закрытие Popup */
     $(document).on("click", ".close", function(event) {
       $('.visible').removeClass('visible');
       $('body').removeClass('popup-open');
     });
       
-      $(document).on("click", ".overlay", function(event) {
-        $('.visible').removeClass('visible');
-        $('body').removeClass('popup-open');
-      });
+    $(document).on("click", ".overlay", function(event) {
+      $('.visible').removeClass('visible');
+      $('body').removeClass('popup-open');
+    });
 
     $(document).keyup(function(e) {            /*По Esc выключение попапов, каталога и поиска*/
       if (e.keyCode === 27) {
@@ -67,6 +73,12 @@ $(document).mouseup(function (e){
   }
 });
 */
+
+/*Раскрытие списка городов на мобильной версии*/
+$(document).on("click", '.location', function(event) {
+  event.preventDefault();
+  $('.cities_mobile').toggle();
+});
 /*Раскрытие инпута поиска по клику на Поиск*/
 $(document).on("click", '.search_button', function(event) {
   event.preventDefault();
@@ -93,7 +105,7 @@ $('.photo').hover(function(event) {
 /*Включение предложений на карте*/
 $(document).on("click", '.button_map', function(event) {
   event.preventDefault();
-  $('.cards-block').toggle();
+  $('.cards-block_map').toggle();
   $('.filters').toggle();
   $('.map-block').toggle();
   
@@ -101,7 +113,7 @@ $(document).on("click", '.button_map', function(event) {
 /*Включение предложений обратно списком*/
 $(document).on("click", '.button_list', function(event) {
   event.preventDefault();
-  $('.cards-block').toggle();
+  $('.cards-block_map').toggle();
   $('.filters').toggle();
   $('.map-block').toggle();
 });

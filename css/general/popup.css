@@ -16,6 +16,10 @@
 .popup-feedback {
 	visibility: hidden;
 }
+.popup-choose-city {
+	visibility: hidden;
+}
+
 .popup-open {
 	position: fixed;
 	width: 99vw;                    /*для исключения скачка из-за учета ширины полосы прокрутки в хроме 18px)*/
@@ -249,6 +253,138 @@
 	margin-bottom: 30px;
 }
 
+.popup-choose-city .popup-container {
+	max-width: 1200px;
+	
+}
+
+.popup-choose-city ul {
+	list-style: none;
+}
+.popup-choose-city .current_city p {
+	font-size: 15px;
+	color: #000000;
+	font-family: "Roboto";
+	font-weight: 400;
+}
+.popup-choose-city .icon_marker {
+	background: url('../../img/mainpage/location.png') no-repeat 50%;
+	vertical-align: middle;
+}
+.popup-choose-city .icon_marker_arrow {
+	display: inline-block;
+    margin-right: 10px;
+    width: 16px;
+	height: 18px;
+	background: url('../../img/mainpage/marker_arrow.png') no-repeat 50%;
+	vertical-align: middle;
+}
+.popup-choose-city .auto_choose p {
+	font-size: 15px;
+	color: #ffb200;
+	font-family: "Roboto";
+	font-weight: 400;
+}
+.popup-choose-city .auto_choose p a{
+	text-decoration: none;
+}
+.popup-choose-city .auto_choose p a:visited{
+	color: #ffb200;
+}
+.popup-choose-city ul li a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 5px;
+	color: #000000;
+}
+.popup-choose-city ul li a:visited {
+	color: #000000;
+}
+.popup-choose-city ul li a:hover {
+	color: #e8a300;
+}
+
+.cities {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.cities ul {
+}
+.cities_litera {
+	display: inline-block;
+	padding: 8px 0 0 0;
+	color: #ffb200;
+	margin-bottom: 10px;
+	
+}
+.big_cities ul {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+}
+.all_cities {
+	display: flex;
+}
+.big_cities_column {
+	max-width: 150px;
+}
+
+.all_cities ul {
+	display: flex;
+	flex-wrap: wrap;
+	width: 600px;
+}
+.all_cities ul ul {
+	margin-top: 0;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+}
+
+.all_cities ul ul li a{
+	padding: 5px 0;
+
+}
+
+.popup-choose-city .bold {
+	font-weight: 800;
+}
+.popup-choose-city h5 {
+	margin: 0;
+	display: flex;
+	align-self: flex-start;
+	font-size: 31px;
+	color: #243942;
+	font-family: "Roboto";
+	font-weight: 700;
+}
+.popup-choose-city .current_city_block {
+	display: flex;
+	align-self: flex-end;
+}
+.popup-choose-city .popup-container input {
+    width: 886px;
+	height: 44px;
+	border-radius: 5px;
+	background-color: #ffffff;
+	border: 1px solid #e3eaf1;
+    padding-left: 15px;
+    font-size: 15px;
+    line-height: 60px;
+    color: #c9d4db;
+    font-family: "Roboto";
+    font-weight: 400;
+    outline: none!important;
+    margin-left: 15px;
+}
+.popup-choose-city .popup-container input:focus {
+    border: 2px solid #e8a300;
+}
+
+	
 
 /*_________________________________________________________________________________________*/
 @media screen and (min-width: 750px) {
