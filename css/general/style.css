@@ -143,6 +143,7 @@ ul {
 	.container{
         min-width: 1200px;
     }
+    
 }
 /*_________________________________________________________________*/
     .first-screen {
@@ -277,8 +278,8 @@ ul {
         .buttons {
             flex-direction: row;
         }
-        .button {
-           /* margin-right: 20px;*/
+        .main-text .buttons .button:first-of-type{
+            margin-right: 20px;
         }
     }
     /*______________________________________________________________________________________________*/
