@@ -73,7 +73,11 @@ $(document).mouseup(function (e){
   }
 });
 */
-
+/*Раскрытие основного меню по пункт Все/Еда/.../ */
+$(document).on("click", '.menu1920 li', function(event) {
+  event.preventDefault();
+  $('.menu1920_dropdown-block').toggle();
+});
 /*Раскрытие списка городов на мобильной версии*/
 $(document).on("click", '.location', function(event) {
   event.preventDefault();
