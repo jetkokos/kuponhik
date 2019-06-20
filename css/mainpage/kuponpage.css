@@ -1,3 +1,17 @@
+#terms-tab {
+    display: block;
+}
+#guarantee-tab {
+    display: none;
+}
+#description-tab {
+    display: none;
+}
+#about_partner-tab  {
+    display: none;
+}
+
+
 .breadcrumbs_block {
     display: flex;
     flex-direction: column;
@@ -170,6 +184,32 @@
     height: 36px;
     padding: 5px;
 }
+.tabs_content p{
+    font-size: 13px;
+    line-height: 19px;
+    color: #000000;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+.tabs_content .button{
+    padding-left: 30px;
+    margin: 10px;
+    width: 126px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 5px;
+    background-color: #ffb200;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 400;
+    background: url('../../img/kupon_photos/icon_med-bau.png') no-repeat 15%;
+    background-color: #ffb200;
+}
+.tabs_content .button:hover{
+    background-color: #e8a300;
+}
+
 
 
 .kupon_info .points{

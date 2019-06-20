@@ -127,6 +127,45 @@ $(document).on("click", '.button_list', function(event) {
   $('.map-block').toggle();
 });
 
+
+/*Переключение табов на странице купона*/
+$(document).on("click", '#terms', function(event) {
+  event.preventDefault();
+  $('#terms-tab').show();
+  $('#description-tab').hide();
+  $('#guarantee-tab').hide();
+  $('#about_partner-tab').hide();
+});
+$(document).on("click", '#description', function(event) {
+  event.preventDefault();
+  $('#terms-tab').hide();
+  $('#description-tab').show();
+  $('#guarantee-tab').hide();
+  $('#about_partner-tab').hide();
+});
+$(document).on("click", '#guarantee', function(event) {
+  event.preventDefault();
+  $('#terms-tab').hide();
+  $('#description-tab').hide();
+  $('#guarantee-tab').show();
+  $('#about_partner-tab').hide();
+});
+$(document).on("click", '#about_partner', function(event) {
+  event.preventDefault();
+  $('#terms-tab').hide();
+  $('#description-tab').hide();
+  $('#guarantee-tab').hide();
+  $('#about_partner-tab').show();
+});
+
+
+
+
+
+
+
+
+
 /*Phone mask*/
   $(function(){
     $("input[type='tel']").mask("+7(999) 999-9999");
