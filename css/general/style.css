@@ -154,7 +154,7 @@ ul {
         padding-top: 20px;
         background-color: #ebeff0;
     }
-    .header {
+    .landing_header {
         margin-bottom: 45px;
         text-align: center;
     }
@@ -218,7 +218,7 @@ ul {
         .first-screen {
             background: url('../../img/bg_first_screen.png') no-repeat 50% 5%;
         }
-        .header {
+        .landing_header {
             width: 100%;
             margin-bottom: 110px;
             display: flex;
@@ -263,7 +263,7 @@ ul {
         .first-screen .container {
             min-width: 1130px;
         }
-        .header {
+        .landing_header {
             margin-bottom: 60px;
         }
         .nav-add {

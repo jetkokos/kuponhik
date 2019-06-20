@@ -63,6 +63,11 @@ $(document).on("click", '.catalog', function(event) {
   event.preventDefault();
   $('.dropdown-inside').toggle();
 });
+/*Раскрытие подменю по клику на пункт меню*/
+$(document).on("click", '.dropdown-inside li a', function(event) {
+  event.preventDefault();
+  $(this).parent().find('.dropdown-inside2').toggle();
+});
 /*Закрытие по клику вне меню*/
 /*
 $(document).mouseup(function (e){ 
