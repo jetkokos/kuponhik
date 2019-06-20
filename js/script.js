@@ -48,16 +48,26 @@ $(document).ready(function(){
       $('body').removeClass('popup-open');
     });
 
-    $(document).keyup(function(e) {            /*По Esc выключение попапов, каталога и поиска*/
+    $(document).keyup(function(e) {            /*По Esc выключение попапов, каталога, поиска, menu1920*/
       if (e.keyCode === 27) {
         $('.searchbar').hide();
         $('.dropdown-inside').hide();
+        $('.menu1920_dropdown-block').hide();
         $('.visible').removeClass('visible');
         $('body').removeClass('popup-open');
         return false;
       }
     });
 /*Меню*/ 
+/*Закрытие по клику вне меню*/
+
+$(document).mouseup(function (e){ 
+  var div = $(".menu1920_dropdown-block"); // 
+  if (!div.is(e.target) // 
+      && div.has(e.target).length === 0) { // 
+    div.hide(); 
+  }
+});
 /*Раскрытие меню по клику на Каталог*/
 $(document).on("click", '.catalog', function(event) {
   event.preventDefault();
@@ -68,16 +78,8 @@ $(document).on("click", '.dropdown-inside li a', function(event) {
   event.preventDefault();
   $(this).parent().find('.dropdown-inside2').toggle();
 });
-/*Закрытие по клику вне меню*/
-/*
-$(document).mouseup(function (e){ 
-  var div = $(".dropdown-inside"); // 
-  if (!div.is(e.target) // 
-      && div.has(e.target).length === 0) { // 
-    div.hide(); 
-  }
-});
-*/
+
+
 /*Раскрытие основного меню по пункт Все/Еда/.../ */
 $(document).on("click", '.menu1920 li', function(event) {
   event.preventDefault();
@@ -132,6 +134,7 @@ $(document).on("click", '.button_list', function(event) {
 $(document).on("click", '#terms', function(event) {
   event.preventDefault();
   $(this).css({"border-bottom": "4px solid #243942"});
+  $(this).parent().siblings().children().css({"border-bottom": "none"});
   $('#terms-tab').show();
   $('#description-tab').hide();
   $('#guarantee-tab').hide();
@@ -142,6 +145,7 @@ $(document).on("click", '#description', function(event) {
   $('#terms-tab').hide();
   $('#description-tab').show();
   $(this).css({"border-bottom": "4px solid #243942"});
+  $(this).parent().siblings().children().css({"border-bottom": "none"});
   $('#guarantee-tab').hide();
   $('#about_partner-tab').hide();
 });
@@ -151,6 +155,7 @@ $(document).on("click", '#guarantee', function(event) {
   $('#description-tab').hide();
   $('#guarantee-tab').show();
   $(this).css({"border-bottom": "4px solid #243942"});
+  $(this).parent().siblings().children().css({"border-bottom": "none"});
   $('#about_partner-tab').hide();
 });
 $(document).on("click", '#about_partner', function(event) {
@@ -160,6 +165,7 @@ $(document).on("click", '#about_partner', function(event) {
   $('#guarantee-tab').hide();
   $('#about_partner-tab').show();
   $(this).css({"border-bottom": "4px solid #243942"});
+  $(this).parent().siblings().children().css({"border-bottom": "none"});
 });
 
 
