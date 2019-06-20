@@ -1,7 +1,7 @@
 .breadcrumbs_block {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     
 }
 .breadcrumbs {
@@ -13,6 +13,14 @@
     color: #7c868b;
     font-family: "Roboto";
     font-weight: 400;
+    margin: 0;
+}
+.breadcrumbs a {
+    text-decoration: none;
+    color: #7c868b;
+}
+.breadcrumbs a:visited {
+    color: #7c868b;
 }
 
 .kupon {
@@ -274,6 +282,9 @@
 
 
 @media screen and (min-width: 750px) {
+    .breadcrumbs_block {
+        align-items: center;
+    }
     .kupon h2 {
         max-width: 750px;
     }
