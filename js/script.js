@@ -59,15 +59,7 @@ $(document).ready(function(){
       }
     });
 /*Меню*/ 
-/*Закрытие по клику вне меню*/
 
-$(document).mouseup(function (e){ 
-  var div = $(".menu1920_dropdown-block"); // 
-  if (!div.is(e.target) // 
-      && div.has(e.target).length === 0) { // 
-    div.hide(); 
-  }
-});
 /*Раскрытие меню по клику на Каталог*/
 $(document).on("click", '.catalog', function(event) {
   event.preventDefault();
@@ -81,10 +73,25 @@ $(document).on("click", '.dropdown-inside li a', function(event) {
 
 
 /*Раскрытие основного меню по пункт Все/Еда/.../ */
-$(document).on("click", '.menu1920 li', function(event) {
+$(document).on("click", '.menu1920>li', function(event) {
   event.preventDefault();
-  $('.menu1920_dropdown-block').toggle();
+  $(this).children('a').css({"border-bottom": "4px solid #243942"});
+  $(this).siblings().children('a').css({"border-bottom": "none"});
+  $(this).find('.menu1920_dropdown-block').toggle();
+  $(this).siblings().find('.menu1920_dropdown-block').css({"display": "none"});
 });
+
+/*Закрытие по клику вне меню*/
+
+$(document).mouseup(function (e){ 
+  var div = $(".navigation");
+  var menu = $(".menu1920_dropdown-block");
+  if (!div.is(e.target) 
+      && div.has(e.target).length === 0) { 
+    menu.hide(); 
+  }
+});
+
 /*Раскрытие списка городов на мобильной версии*/
 $(document).on("click", '.location', function(event) {
   event.preventDefault();
