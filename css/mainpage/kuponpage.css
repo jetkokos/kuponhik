@@ -100,10 +100,17 @@
     display: flex;
     align-items: center;
 }
-.button_zone .heart img {
+.button_zone .heart {
+    display: block;
     margin-left: 20px;
-    width: 28px;
-    height: 25px;
+    width: 30px;
+    height: 40px;
+    background: url('../../img/mainpage/heart.png') no-repeat 50%;
+    background-size: contain;
+    cursor: pointer;
+}
+.button_zone .heart:hover {
+    background: url('../../img/mainpage/heart_full.png') no-repeat 50%;
 }
 .kupon .get_kupon {
     display: flex;
@@ -120,6 +127,10 @@
     font-family: "Roboto";
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.kupon .get_kupon:hover {
+    background-color: #e8a300;
 }
 
 .kupon .time {

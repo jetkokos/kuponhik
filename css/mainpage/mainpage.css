@@ -130,10 +130,15 @@ display: none;
     list-style: none;
     flex-direction: column;
     margin-top: 0;
+    position: absolute;
+    z-index: 1;
 }
 .filters ul li {
     background-color: #f2f6f9;
-    margin-right: 8px;
+    width: 148px;
+}
+.filters .district-ul li {
+    width: 250px;
 }
 .filters ul li a {
     box-sizing: border-box;
@@ -215,6 +220,9 @@ display: none;
     left: 5%;
     max-width: 350px;
     background-color: #fff;
+}
+.map-block .card .additional {
+    display: none;
 }
 .cards {
     margin: 0 auto;
@@ -429,6 +437,7 @@ span.quantity {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -445,7 +454,8 @@ span.quantity {
     border: none;
     outline: none!important;
     box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
-    margin-left: 15px;
+    margin: 10px;
+    
 }
 .searchbar input:focus {
     border: 2px solid #e8a300;
@@ -461,8 +471,8 @@ span.quantity {
     background-size: 60%;
     background-position: 50% 50%;
     position: absolute;
-    right: 5px;
-    top: 4px;
+    right: 15px;
+    top: 13px;
 }
 .search_icon:hover {
     background-color: #e8a300;
@@ -613,12 +623,8 @@ span.quantity {
         border-left: none;
         padding: 0;
     }
-    .search-block {
-        height: 65px;
-    }
-    .searchbar {
-        margin-top: 11px;
-    }
+   
+   
     
 }
 
@@ -635,8 +641,9 @@ span.quantity {
     .cards {
         padding: 0;
     }
-    .card {
+    .card:last-child {
         margin-right: 0px;
+        min-height: 400px;
     }
     .card .photo img {
         width: 359px;
@@ -726,12 +733,22 @@ span.quantity {
         display: block;
         background-color: #fdfdfe;
     }
-
+    .searchbar {
+        padding: 10px 0;
+    }
     .searchbar input {
         border: 1px solid #e3eaf1;
+        margin: 0;
     }
     .search_logo {
         display: block;
+        width: 47px;
+        height: 49px;
+        margin-right: 10px;
+    }
+    .search_icon {
+        top: 17px;
+        right: 5px;
     }
     .map-block {
         max-width: 1200px;
