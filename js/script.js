@@ -131,6 +131,7 @@ $(document).on("click", '.button_list', function(event) {
 /*Переключение табов на странице купона*/
 $(document).on("click", '#terms', function(event) {
   event.preventDefault();
+  $(this).css({"border-bottom": "4px solid #243942"});
   $('#terms-tab').show();
   $('#description-tab').hide();
   $('#guarantee-tab').hide();
@@ -140,6 +141,7 @@ $(document).on("click", '#description', function(event) {
   event.preventDefault();
   $('#terms-tab').hide();
   $('#description-tab').show();
+  $(this).css({"border-bottom": "4px solid #243942"});
   $('#guarantee-tab').hide();
   $('#about_partner-tab').hide();
 });
@@ -148,6 +150,7 @@ $(document).on("click", '#guarantee', function(event) {
   $('#terms-tab').hide();
   $('#description-tab').hide();
   $('#guarantee-tab').show();
+  $(this).css({"border-bottom": "4px solid #243942"});
   $('#about_partner-tab').hide();
 });
 $(document).on("click", '#about_partner', function(event) {
@@ -156,6 +159,7 @@ $(document).on("click", '#about_partner', function(event) {
   $('#description-tab').hide();
   $('#guarantee-tab').hide();
   $('#about_partner-tab').show();
+  $(this).css({"border-bottom": "4px solid #243942"});
 });
 
 

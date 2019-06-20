@@ -237,14 +237,16 @@
 
 .kupon_info .ul-menu a {
     text-decoration: none;
+    padding: 10px;
 }
 .kupon_info .ul-menu a:visited {
     color: #243942;
 }
+/*
 .kupon_info .ul-menu a:active {
     border-bottom: 4px solid #243942;
 }
-
+*/
 .kupon_info .kupon-map .ul-menu {
     justify-content: flex-start;
     padding-left: 15px;

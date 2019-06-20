@@ -600,6 +600,7 @@ span.quantity {
     .card {
         min-height: 375px;
         margin-bottom: 25px;
+        min-height: 400px;
     }
     .cards-block_kuponpage .card {
         margin-right: 10px;
@@ -690,10 +691,12 @@ span.quantity {
     }
     .cards {
         padding: 0;
+        
     }
+    
     .card:last-child {
         margin-right: 0px;
-        min-height: 400px;
+        
     }
     .card .photo img {
         width: 359px;
