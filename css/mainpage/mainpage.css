@@ -229,12 +229,16 @@
     width: 20px;
     margin-right: 10px;
 }
-.map-block .card {
+.map-block .card { /*Карточка купона над картой*/
+    display: none;
     position: absolute;
     top: 20%;
     left: 5%;
     max-width: 350px;
     background-color: #fff;
+    height: auto;
+    min-height: 0;
+    transform: scale(0.7);
 }
 .map-block .card .additional {
     display: none;
@@ -699,7 +703,7 @@ span.quantity {
         
     }
     .card .photo img {
-        width: 359px;
+        width: 100%;
         height: 200px;  
         border-radius: 5px;
     }
