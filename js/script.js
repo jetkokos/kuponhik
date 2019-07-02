@@ -75,8 +75,8 @@ $(document).on("click", '.dropdown-inside li a', function(event) {
 /*Раскрытие основного меню по пункт Все/Еда/.../ */
 $(document).on("click", '.menu1920>li', function(event) {
   event.preventDefault();
-  $(this).children('a').css({"border-bottom": "4px solid #243942"});
-  $(this).siblings().children('a').css({"border-bottom": "none"});
+  $(this).find('.menu-triangle').toggle();
+  $(this).siblings().find('.menu-triangle').css({"display": "none"});
   $(this).find('.menu1920_dropdown-block').toggle();
   $(this).siblings().find('.menu1920_dropdown-block').css({"display": "none"});
 });

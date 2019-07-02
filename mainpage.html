@@ -21,7 +21,7 @@
 					<div class="first-320">
 						<a href="#" class="location"><img src="img/mainpage/location.png" alt="location">Минск</a>
 						<a href="#" class="logo"><img src="img/mainpage/logo.png" alt="logo"></a>
-						<a href="#" class="enter"><img src="img/mainpage/enter.png" alt="enter"></a>
+						<a href="#" class="enter popup-enter_ref"><img src="img/mainpage/enter.png" alt="enter"></a>
 					</div>
 					<div class="second-320">
 						<nav class="">
@@ -98,7 +98,7 @@
 					<div class="second-750">
 						<a href="#" class="location"><img src="img/mainpage/location.png" alt="location">Минск</a>
 						<a href="#" class="phone"><img src="img/mainpage/phone.png" alt="phone"></a>
-						<a href="#" class="enter"> <span class="yellow">Вход</span></a>
+						<a href="#" class="enter popup-enter_ref"> <span class="yellow">Вход</span></a>
 						<a href="#" class="search_button"><img src="img/mainpage/search.png" alt="search">Поиск</a>
 						<a href="#" class="catalog"><img src="img/mainpage/mobile_menu.png" alt="mobile_menu">Каталог</a>
 						<ul class="dropdown-inside">
@@ -168,8 +168,8 @@
 					</div>
 					<div class="second-1920">
 						<a href="tel:+233252352345" class="phone"><img src="img/mainpage/phone.png" alt="phone">+23 (325) 235-23-45</a>
-						<a href="#" class="enter"><span class="yellow">Вход</span></a>
-						<a href="#" class="enter">Регистрация</a>
+						<a href="#" class="enter popup-enter_ref"><span class="yellow">Вход</span></a>
+						<a href="#" class="enter popup-register_ref">Регистрация</a>
 					</div>
 				</div>
 			</div>
@@ -178,7 +178,7 @@
 				<div class="container">
 					<div class="searchbar">
 						<img class="search_logo" src="img/mainpage/search_logo.png" alt="search_logo">
-						<input type="text" value="Поиск предложений в городе Минск">
+						<input type="text" placeholder="Поиск предложений в городе Минск">
 						<a class="search_icon" href="#"></a>
 					</div>
 				</div>
@@ -187,7 +187,7 @@
 			<div class="container">
 				<ul class="menu1920">
 					<li>
-						<a href="#">Все</a>
+						<a href="#">Все </a>
 						<div class="menu1920_dropdown-block">
 							<div class="container">
 								Контент Все
@@ -195,7 +195,7 @@
 						</div>
 					</li>
 					<li>
-						<a href="#">Еда</a>
+						<a href="#">Еда <div class="menu-triangle"></div></a>
 						<div class="menu1920_dropdown-block">
 							<div class="container">
 								<div class="icon-block"> <span class="food_list_icon"></span></div>
@@ -235,7 +235,8 @@
 						</div>
 					</li>
 					<li>
-						<a href="#">Красота</a>
+						<a href="#">Красота <div class="menu-triangle"></div></a>
+						
 						<div class="menu1920_dropdown-block">
 							<div class="container">
 								Контент Красота
@@ -243,7 +244,8 @@
 						</div>
 					</li>
 					<li>
-						<a href="#">Здоровье</a>
+						<a href="#">Здоровье <div class="menu-triangle"></div></a>
+						
 						<div class="menu1920_dropdown-block">
 							<div class="container">
 								КонтентЗдоровье
@@ -251,7 +253,7 @@
 						</div>
 					</li>
 					<li>
-						<a href="#">Развлечения</a>
+						<a href="#">Развлечения <div class="menu-triangle"></div></a>
 						<div class="menu1920_dropdown-block">
 							<div class="container">
 								Контент Развлечения
@@ -259,7 +261,7 @@
 						</div>
 					</li>
 					<li>
-						<a href="#">Товары</a>
+						<a href="#">Товары <div class="menu-triangle"></div></a>
 						<div class="menu1920_dropdown-block">
 							<div class="container">
 								Контент Товары
@@ -267,7 +269,7 @@
 						</div>
 					</li>
 					<li>
-						<a href="#">Обучение</a>
+						<a href="#">Обучение <div class="menu-triangle"></div></a>
 						<div class="menu1920_dropdown-block">
 							<div class="container">
 								Контент Обучение
@@ -275,7 +277,7 @@
 						</div>
 					</li>
 					<li>
-						<a href="#">Спорт</a>
+						<a href="#">Спорт <div class="menu-triangle"></div></a>
 						<div class="menu1920_dropdown-block">
 							<div class="container">
 								Контент Спорт
@@ -283,7 +285,7 @@
 						</div>
 					</li>
 					<li>
-						<a href="#">Туры</a>
+						<a href="#">Туры <div class="menu-triangle"></div></a>
 						<div class="menu1920_dropdown-block">
 							<div class="container">
 								Контент Туры
@@ -291,7 +293,7 @@
 						</div>
 					</li>
 					<li>
-						<a href="#">Услуги</a>
+						<a href="#">Услуги <div class="menu-triangle"></div></a>
 						<div class="menu1920_dropdown-block">
 							<div class="container">
 								Контент Услуги
@@ -722,6 +724,7 @@
 					</div>
 					<div class="legal_docs">
 						<a href="#" class="button popup-feedback_ref">Обратная связь</a>
+						<a href="#" class="button">Вход для юр. лиц</a>
 						<div class="lg_info">
 							<a href="">Обработка персональных данных</a>
 							<a href="">Пользовательское соглашение</a>
@@ -747,6 +750,85 @@
 		</div>
 	</div>
 	<!--popups-->
+	<div class="popup popup-enter">
+		<div class="overlay"></div>
+		<div class="popup-container">
+			<button href="#" class="close">&times;</button>
+			<h6>Вход</h6>
+			<form class="form formEnter">
+				<input type="e-mail" name="e_mail" placeholder="E-mail">
+				<span class="form_warning"></span>
+				<input type="password" name="password" placeholder="Пароль">
+				<div class="form_checkbox">
+					<input type="checkbox" name="stay_in_system">
+					<label for="stay_in_system">Оставаться в системе</label>
+				</div>
+				<div class="popup-container_enter">
+					<span class="form_warning"></span>
+					<button name="submit" class="button bg_yellow ">Войти<span></span></button>
+				</div>
+			</form>
+			<div class="form_helper">
+				<a class="yellow popup-forget_password_ref" href="#">Забыли пароль?</a>
+				<a class="yellow popup-register_ref" href="#">Регистрация</a>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup-forget_password">
+		<div class="overlay"></div>
+		<div class="popup-container">
+			<button href="#" class="close">&times;</button>
+			<h6>Вспомнить пароль</h6>
+			<form class="form formForgetPassword">
+				<input type="e-mail" name="e_mail" placeholder="E-mail">
+				<span class="form_warning"></span>
+				<p>Мы отправим пароль на указанный Вами адрес</p>
+				<div class="popup-container_enter">
+					<span class="form_warning"></span>
+					<button name="submit" class="button button-send bg_yellow popup-forget_password-success_ref">Отправить<span></span></button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="popup popup-forget_password-success">
+		<div class="overlay"></div>
+		<div class="popup-container">
+			<button href="#" class="close">&times;</button>
+			<form class="form">
+				<!--Loader-->
+				<div class="lds-dual-ring visible"></div>
+				<p class="center">Мы отправили подтверждение на указанный Вами электронный адрес</p>
+			</form>
+		</div>
+	</div>
+	<div class="popup popup-register">
+		<div class="overlay"></div>
+		<div class="popup-container">
+			<button href="#" class="close">&times;</button>
+			<h6>Регистрация</h6>
+			<form class="form formRegister">
+				<input type="e-mail" name="e_mail" placeholder="E-mail">
+				<span class="form_warning"></span>
+				<input type="tel" name="tel" placeholder="Телефон">
+				<span class="form_warning"></span>
+				<input type="text" name="name" placeholder="Имя">
+				<span class="form_warning"></span>
+				<input type="text" name="surname" placeholder="Фамлия">
+				<span class="form_warning"></span>
+				<br>
+				<input type="password" name="password" placeholder="Пароль">
+				<input type="password" name="password" placeholder="Пароль еще раз">
+				<div class="popup-container_enter">
+					<span class="form_warning"></span>
+					<button name="submit" class="button button-register bg_yellow">Зарегистрироваться<span></span></button>
+				</div>
+				<div class="form_checkbox">
+					<input type="checkbox" name="personal_data" required>
+					<label for="personal_data">Даю согласие на обработку моих данных</label>
+				</div>
+			</form>
+		</div>
+	</div>
 	<div class="popup popup-feedback">
 		<div class="overlay"></div>
 		<div class="popup-container">
@@ -779,7 +861,7 @@
 					</div>
 				</div>
 				<div class="searchbar">
-					<input type="text" value="Введите название города">
+					<input type="text" placeholder="Введите название города">
 					<a class="search_icon" href="#"></a>
 				</div>
 				

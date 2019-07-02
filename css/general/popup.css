@@ -21,11 +21,12 @@
 }
 
 .popup-open {
-	position: fixed;
-	width: 99vw;                    /*для исключения скачка из-за учета ширины полосы прокрутки в хроме 18px)*/
-	width: calc(100vw - 18px);
+	/*position: fixed;
+	width: 99vw;                    
+	width: calc(100vw - 0px);*/
 	overflow: hidden;
-    touch-action: none;
+	overflow-y: scroll;
+	touch-action: none;
 }
 .popup {
 	position: fixed;
@@ -36,7 +37,10 @@
 	z-index: 50;
 	opacity: 0;
 	transition: opacity 1s ease 0s;
-	overflow-y: scroll;
+	/*overflow-y: scroll;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .overlay {
 	background-color: #000000;
@@ -49,11 +53,12 @@
 	overflow: hidden;
 }
 .popup-container {
+	position: relative;
 	background: #ffffff;
-	position: absolute;
-	top: 10%;
-	left: 50%;
-    transform: translateX(-50%);
+	/*position: fixed;*/
+	/*top: 5%;*/
+	/*left: 50%;*/
+   /*transform: translateX(-50%);*/
 	padding: 20px 25px 10px;
 	border-radius: 10px;
 	color: black;
@@ -367,14 +372,14 @@
 }
 .popup-choose-city .popup-container input {
     width: 886px;
-	height: 44px;
+	height: 48px;
 	border-radius: 5px;
 	background-color: #ffffff;
 	border: 1px solid #e3eaf1;
     padding-left: 15px;
     font-size: 15px;
     line-height: 60px;
-    color: #c9d4db;
+    color: #000000;
     font-family: "Roboto";
     font-weight: 400;
     outline: none!important;

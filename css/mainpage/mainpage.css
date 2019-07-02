@@ -153,7 +153,7 @@
     width: 148px;
 }
 .filters .district-ul li {
-    width: 250px;
+    width: 150px;
 }
 .filters ul li a {
     box-sizing: border-box;
@@ -178,19 +178,17 @@
     color: #000000;
     background-color: #f2f6f9;
 }
-
 .district-ul input {
     box-sizing: border-box;
     padding: 10px;
     display: block;
-    margin: 8px auto;
+    margin: 8px 0 8px 10px;
     width: 130px;
     height: 30px;
     outline: none;
     border: 1px solid #e3eaf2;
     border-radius: 5px;
 }
-
 
 .cards-block {
     display: flex;
@@ -462,6 +460,7 @@ span.quantity {
 }
 
 
+
 /*_______________________________Searchbar____________________________________*/
 .search-block {
     background-color: #1c2e36;
@@ -488,7 +487,7 @@ span.quantity {
     border-radius: 5px;
     font-size: 15px;
     line-height: 60px;
-    color: #c9d4db;
+    color: #000000;
     font-family: "Roboto";
     font-weight: 400;
     border: none;
@@ -552,6 +551,10 @@ span.quantity {
 .cities_mobile li a:hover{
     color: #e8a300;
 }
+
+
+
+  
 
 /*______________________________________________________________________________*/
 @media screen and (min-width: 750px) {
@@ -674,12 +677,6 @@ span.quantity {
     .header .second-750 .dropdown-inside li a {
         border-left: none;
     }
-
-    
-
-    
-   
-   
     
 }
 
@@ -696,6 +693,9 @@ span.quantity {
     .cards {
         padding: 0;
         
+    }
+    .card {
+        width: 360px;
     }
     
     .card:last-child {
@@ -752,6 +752,9 @@ span.quantity {
     .filters .container {
         justify-content: space-between;
     }
+    .filters .district-ul li {
+        width: 250px;
+    }
     .button_district {
         width: 250px;
     }
@@ -774,6 +777,19 @@ span.quantity {
         font-family: "Roboto";
         font-weight: 400;
         text-transform: uppercase;
+        position: relative;
+    }
+   
+    .menu-triangle {
+        display: none;
+        position: absolute;
+        left: 30%;
+        top: 80%;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #8cc000;
     }
     /*
     .menu1920 li a:active {
@@ -809,6 +825,7 @@ span.quantity {
         max-width: 1200px;
         margin: 40px auto 0px;
     }
+    
     /*_____________________________Dropdown menu1920_____________________________*/
     .navigation {
         position: relative;
