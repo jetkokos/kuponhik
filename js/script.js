@@ -74,7 +74,7 @@ $(document).on("click", '.dropdown-inside li a', function(event) {
 
 /*Раскрытие основного меню по пункт Все/Еда/.../ */
 $(document).on("click", '.menu1920>li', function(event) {
-  event.preventDefault();
+  
   $(this).find('.menu-triangle').toggle();
   $(this).siblings().find('.menu-triangle').css({"display": "none"});
   $(this).find('.menu1920_dropdown-block').toggle();
@@ -86,9 +86,10 @@ $(document).on("click", '.menu1920>li', function(event) {
 $(document).mouseup(function (e){ 
   var div = $(".navigation");
   var menu = $(".menu1920_dropdown-block");
-  if (!div.is(e.target) 
-      && div.has(e.target).length === 0) { 
+  if ((!div.is(e.target) || !menu.is(e.target)) 
+    /*&& div.has(e.target).length === 0*/) { 
     menu.hide(); 
+    $('.menu-triangle').css({"display": "none"});
   }
 });
 
