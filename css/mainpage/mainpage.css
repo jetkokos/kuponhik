@@ -691,16 +691,17 @@ span.quantity {
         display: none;
     }
     .cards {
+        justify-content: flex-start;
         padding: 0;
         
     }
     .card {
         width: 360px;
+        margin-right: 10px;
     }
     
-    .card:last-child {
+    .cards .card:nth-child(3n) {
         margin-right: 0px;
-        
     }
     .card .photo img {
         width: 100%;

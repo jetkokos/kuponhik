@@ -227,7 +227,7 @@
 	color: rgb(231,22,54);	
 }
 .visible {
-	z-index: 100;
+	z-index: 1000;
 	opacity: 1;
 	visibility: visible;
 }
