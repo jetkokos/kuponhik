@@ -1,0 +1,200 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #c9d4db;
+}
+.row_radio {
+    justify-content: flex-start;
+}
+.private_zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.private_zone .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.private_menu_block, .private_info_block {
+    width: 100%;
+}
+.private_menu_block .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.private_zone .select {
+    width: 100%;
+    font-size: 13px;
+    color: #000000;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+}
+.private_zone .select .option {
+    margin: 0 15px;
+    padding-left: 10px;
+    height: 46px;
+    line-height: 46px;
+    color: #000000;
+    font-family: "Roboto";
+    font-weight: 400;
+    background-color: #f3f6f8;
+    border: 1px solid #e3eaf1;
+    cursor: pointer;
+    border-left: 2px solid #ffb200;
+    
+    
+}
+
+.private_zone .select .option_main{
+    display: block;
+    background: url('../../img/mainpage/bottom.png') no-repeat 95%;
+    background-color: #f3f6f8;
+    border-left: 2px solid #ffb200;
+}
+
+.private_zone .select .exit{
+    background: url('../../img/profile/close.png') no-repeat 95%;
+    background-color: #f3f6f8;
+}
+
+.private_zone h3 {
+    font-size: 19px;
+    line-height: 19px;
+    color: #243942;
+    font-family: "Roboto";
+    font-weight: 600;
+    text-transform: none;
+}
+
+.private_zone .label {
+    margin-top: 10px;
+    font-size: 11px;
+    line-height: 11px;
+    color: #7c868b;
+    font-family: "Roboto";
+    font-weight: 700;
+}
+
+.private_zone .info_view {
+    font-size: 15px;
+    line-height: 35px;
+    color: #243942;
+    font-family: "Roboto";
+    font-weight: 700;
+}
+.private_zone .info_change {
+    width: 80px;
+    text-align: right;
+    font-size: 11px;
+    line-height: 35px;
+    color: #ffb200;
+    font-family: "Roboto";
+    font-weight: 400;
+    cursor: pointer;
+    background: url('../../img/profile/eddit_icon.png') no-repeat 10%;
+}
+.personal_name_change {
+    width: 100%;
+   /* display: none;*/
+}
+.personal_city_change {
+    width: 100%;
+    /*display: none;*/
+}
+
+.private_zone .button {
+    margin-top: 20px;
+    background-color: #ffb200;
+}
+.personal_info {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.private_zone input[type="text"] {
+    margin: 10px 0;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 100%;
+    max-width: 190px;
+    border-radius: 24px;
+    background-color: #ecf0f0;
+    border: 1px solid #c9d4db;
+    outline: none;
+    font-size: 15px;
+    color: #7c868b;
+    font-family: "Roboto";
+    font-weight: 700;
+}
+.private_zone input[type="radio"] {
+    margin: 0 5px 0 0;
+    color: #ffb200;
+}
+.private_zone label {
+    margin-right: 15px;
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 35px;
+    color: #243942;
+    font-family: "Roboto";
+    font-weight: 700;
+}
+.private_zone .finish_button {
+    background: url('../../img/profile/success_icon.png') no-repeat 50%;
+    width: 16px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.private_zone_block {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*_______________________________________________*/
+@media screen and (min-width: 750px) {
+    .private_zone input[type="text"] {
+        max-width: 600px;
+    }
+}
+
+
+
+
+/*_______________________________________________*/
+@media screen and (min-width: 1160px) {
+    .private_zone_block {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .private_menu_block {
+        max-width: 350px;
+    }
+    .private_info_block {
+        max-width: 750px;
+    }
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 350px;
+    }
+    .private_zone .select .option_main {
+        display: none;
+    }
+}

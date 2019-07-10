@@ -177,8 +177,15 @@ $(document).on("click", '#about_partner', function(event) {
 });
 
 
-
-
+/*Profile page*/ 
+/*Раскрытие инпутов для редактирования имени/города по клику на Изменить*/
+/*
+$(document).on("click", '.info_change', function(event) {
+  event.preventDefault();
+  $(this).parent().siblings().find('.personal_name_change').toggle();
+  console.log($(this).parent().siblings());
+});
+*/
 
 
 
