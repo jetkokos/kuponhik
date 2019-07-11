@@ -187,62 +187,205 @@
 			<div class="container">
 				<h2>Личный кабинет</h2>
 				<div class="private_zone_block">
-						<div class="private_menu_block">
-								<div class="container">
-									<div class="select">
-										<div class="option option_main">Персональная информация</div>
-										<div class="dropdown">
-											<div class="option">Персональная информация</div>
-											<div class="option">Мои купоны</div>
-											<div class="option">Настройки профиля</div>
-											<div class="option"></div>
-											<div class="option exit">Выйти</div>
+					<div class="private_menu_block">
+						<div class="container">
+							<div class="select">
+								<div class="option option_main">Персональная информация</div>
+								<ul id="" class="dropdown profile_hidden">
+									<li class="option">
+										<a class="pers_info_ref" href="">Персональная информация</a>	
+									</li>
+									<li class="option">
+										<a class="my_coupons_ref" href="">Мои купоны</a>	
+									</li>
+									<li class="option">
+										<a class="profile_options_ref" href="">Настройки профиля</a>	
+									</li>
+									<li class="option">
+									</li>
+									<li class="option option_exit">
+										<a href="#">Выйти</a>	
+									</li>
+								</ul>
+								<ul id="" class="dropdown1920">
+									<li class="option border-left-yellow">
+										<a class="pers_info_ref" href="">Персональная информация</a>	
+									</li>
+									<li class="option">
+										<a class="my_coupons_ref" href="">Мои купоны</a>	
+									</li>
+									<li class="option">
+										<a class="profile_options_ref" href="">Настройки профиля</a>	
+									</li>
+									<li class="option">
+									</li>
+									<li class="option option_exit">
+										<a href="#">Выйти</a>	
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="private_info_block">
+						<div id="personal_info" class="personal_info">
+							<h3>Персональная информация</h3>
+							<div class="label">Ваше имя</div>
+							<div class="row">
+								<div id="personal_name" class="info_view">Сергей</div>
+								<div id="change_name_button" class="info_change">Изменить</div>
+							</div>
+							<div id="change_name_block" class="personal_name_change">
+								<div class="row">
+									<input type="text" class="personal_name_input"></input>
+									<div id="personal_name_save" class="finish_button"></div>
+								</div>
+							</div>	
+							<div class="label">Пол</div>
+							<div class="row row_radio">
+								<input name="gender" id="gender_man" type="radio">
+								<label for="gender_man">Мужчина</label>
+								<input name="gender" type="radio">
+								<label for="gender_woman">Женщина</label>
+							</div>
+							<div class="label">Город</div>
+							<div class="row">
+								<div id="personal_city" class="info_view">Минск</div>
+								<div id="change_city_button" class="info_change">Изменить</div>
+							</div>
+							<div id="change_city_block" class="row personal_city_change">
+								<div class="row">
+									<input type="text" class="personal_city_input"></input>
+									<div id="personal_city_save" class="finish_button"></div>
+								</div>
+							</div>
+							<button class="button">Сохранить</button>
+						</div>
+						<div id="my_coupons" class="my_coupons profile_hidden">
+							<div class="row">
+								<h3>Мои купоны</h3>
+								<div class="how_return">Как вернуть?</div>
+							</div>
+							<div class="my_coupons_menu">
+								<ul>
+									<li id="coupons_actual_ref" class="my_coupons_menu_underlined">Действительные</li>
+									<li id="coupons_used_ref">Использованные</li>
+									<li id="coupons_lated_ref">Просроченные</li>
+								</ul>
+								<div>
+									<div id ="coupons_actual" class="coupon_block">
+										<div class="cards-block cards-block_map">
+											<div class="container">
+												<div class="cards">
+													<div class="card">
+														<div class="photo">
+															<img src="img/mainpage/template_photo1.png" alt="photo">
+															<div class="card-description">
+																<p>Краткое описание предложения.</p>
+																<p>Бесплатное раннее заселение возможно с 09:00 при наличии свободных номеров. Бесплатный поздний выезд возможен 
+																	до 14:00 при наличии свободных номеров</p>
+															</div>
+															<div class="discount">-54%</div>
+															<div class="whenwhere">10:12:<span class="yellow">34</span> <span class="round"></span> Пл. Якуба Колоса</div>
+														</div>
+														<div class="text">
+															<p>5 минут полета в аэротрубе для одного человека в любой день недели в аэродинамическом комплексе
+																I Can Fly в ТЦ «Авиапарк»</p>
+														</div>
+														<div class="additional">
+															<div class="more"><a href="#">подробнее</a></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id ="coupons_used" class="coupon_block">
+										<div class="cards-block cards-block_map">
+											<div class="container">
+												<div class="cards">
+													<div class="card">
+														<div class="photo">
+															<img src="img/mainpage/template_photo2.png" alt="photo">
+															<div class="card-description">
+																<p>Краткое описание предложения.</p>
+																<p>Бесплатное раннее заселение возможно с 09:00 при наличии свободных номеров. Бесплатный поздний выезд возможен 
+																	до 14:00 при наличии свободных номеров</p>
+															</div>
+															<div class="discount">-54%</div>
+															<div class="whenwhere">10:12:<span class="yellow">34</span> <span class="round"></span> Пл. Якуба Колоса</div>
+														</div>
+														<div class="text">
+															<p>5 минут полета в аэротрубе для одного человека в любой день недели в аэродинамическом комплексе
+																I Can Fly в ТЦ «Авиапарк»</p>
+														</div>
+														<div class="additional">
+															<div class="more"><a href="#">подробнее</a></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id ="coupons_lated" class="coupon_block">
+										<div class="cards-block cards-block_map">
+											<div class="container">
+												<div class="cards">
+													<div class="card">
+														<div class="photo">
+															<img src="img/mainpage/template_photo3.png" alt="photo">
+															<div class="card-description">
+																<p>Краткое описание предложения.</p>
+																<p>Бесплатное раннее заселение возможно с 09:00 при наличии свободных номеров. Бесплатный поздний выезд возможен 
+																	до 14:00 при наличии свободных номеров</p>
+															</div>
+															<div class="discount">-54%</div>
+															<div class="whenwhere">10:12:<span class="yellow">34</span> <span class="round"></span> Пл. Якуба Колоса</div>
+														</div>
+														<div class="text">
+															<p>5 минут полета в аэротрубе для одного человека в любой день недели в аэродинамическом комплексе
+																I Can Fly в ТЦ «Авиапарк»</p>
+														</div>
+														<div class="additional">
+															<div class="more"><a href="#">подробнее</a></div>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
+								
 							</div>
-							<div class="private_info_block">
-								<div class="personal_info">
-									<h3>Персональная информация</h3>
-									<div class="label">Ваше имя</div>
-									<div class="row">
-										<div class="info_view">Сергей</div>
-										<div class="info_change">Изменить</div>
-									</div>
-									<div class="personal_name_change">
-										<div class="row">
-											<input type="text" class="personal_name_input"></input>
-											<div class="finish_button"></div>
-										</div>
-									</div>	
-									<div class="label">Пол</div>
-									<div class="row row_radio">
-										<input name="gender" id="gender_man" type="radio">
-										<label for="gender_man">Мужчина</label>
-										<input name="gender" type="radio">
-										<label for="gender_woman">Женщина</label>
-									</div>
-									<div class="label">Город</div>
-									<div class="row">
-										<div class="info_view">Минск</div>
-										<div class="info_change">Изменить</div>
-									</div>
-									<div class="row personal_city_change">
-										<input type="text" class="personal_city_input"></input>
-										<div class="finish_button"></div>
-									</div>
-									<button class="button">Сохранить</button>
+						</div>
+						<div id="profile_options" class="profile_options profile_hidden">
+							<h3>Настройки профиля</h3>
+							<div class="label">Адрес электронной почты</div>
+							<div class="row">
+								<div id="personal_email" class="info_view">123@123.ru</div>
+								<div id="change_email_button" class="info_change">Изменить</div>
+							</div>
+							<div id="change_email_block" class="personal_email_change">
+								<div class="row">
+									<input type="text" class="personal_email_input"></input>
+									<div id="personal_email_save" class="finish_button"></div>
 								</div>
-								<div class="my_coupons"></div>
-								<div class="profile_optoins"></div>
+							</div>	
+							<div class="row">
+								<div id="personal_password" class="info_view">*******</div>
+								<div id="change_pass_button" class="info_change">Изменить</div>
 							</div>
+							<div id="change_pass_block" class="personal_password_change">
+								<div class="row">
+									<input type="text" class="personal_password_input"></input>
+									<div id="personal_password_save" class="finish_button"></div>
+								</div>
+								<button class="button">Сохранить</button>
+							</div>	
+						</div>
+					</div>
 				</div>
-				
-
 			</div>
 		</div>
-		
-		
 		<div class="legal">
 			<div class="container">
 				<div class="legal_main">
@@ -525,7 +668,6 @@
 									</li>
 								</ul>
 							</div>
-						
 					</div>
 				</div>
 			</div>

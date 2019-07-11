@@ -178,17 +178,111 @@ $(document).on("click", '#about_partner', function(event) {
 
 
 /*Profile page*/ 
-/*Раскрытие инпутов для редактирования имени/города по клику на Изменить*/
-/*
-$(document).on("click", '.info_change', function(event) {
+
+
+/*Раскрытие пунктов меню*/
+$(document).on("click", '.option_main', function(event) {
   event.preventDefault();
-  $(this).parent().siblings().find('.personal_name_change').toggle();
-  console.log($(this).parent().siblings());
+ $('.dropdown').toggleClass('profile_hidden');
 });
-*/
 
 
+$(document).on("click", '.pers_info_ref', function(event) {
+  event.preventDefault();
+  $('#personal_info').removeClass('profile_hidden'); 
+  $('#personal_info').siblings().addClass('profile_hidden'); 
+  $('.dropdown').toggleClass('profile_hidden');
+  $('.option_main').text('Персональная информация');
+  $('.pers_info_ref').parent().addClass('border-left-yellow'); 
+  $('.pers_info_ref').parent().siblings().removeClass('border-left-yellow'); 
 
+});
+$(document).on("click", '.my_coupons_ref', function(event) {
+  event.preventDefault();
+  $('#my_coupons').removeClass('profile_hidden'); 
+  $('#my_coupons').siblings().addClass('profile_hidden'); 
+  $('.dropdown').toggleClass('profile_hidden');
+  $('.option_main').text('Мои купоны');
+  $('.my_coupons_ref').parent().addClass('border-left-yellow'); 
+  $('.my_coupons_ref').parent().siblings().removeClass('border-left-yellow'); 
+});
+$(document).on("click", '.profile_options_ref', function(event) {
+  event.preventDefault();
+  $('#profile_options').removeClass('profile_hidden');
+  $('#profile_options').siblings().addClass('profile_hidden'); 
+  $('.dropdown').toggleClass('profile_hidden');
+  $('.option_main').text('Настройки профиля');
+  $('.profile_options_ref').parent().addClass('border-left-yellow'); 
+  $('.profile_options_ref').parent().siblings().removeClass('border-left-yellow'); 
+});
+
+/*Раскрытие пунктов меню Действительные/Просроченные/Мои */
+$(document).on("click", '#coupons_actual_ref', function(event) {
+  event.preventDefault();
+  $('#coupons_actual').removeClass('profile_hidden'); 
+  $('#coupons_actual').siblings().addClass('profile_hidden'); 
+  $('#coupons_actual_ref').addClass('my_coupons_menu_underlined'); 
+  $('#coupons_actual_ref').siblings().removeClass('my_coupons_menu_underlined');
+});
+$(document).on("click", '#coupons_used_ref', function(event) {
+  event.preventDefault();
+  $('#coupons_used').removeClass('profile_hidden'); 
+  $('#coupons_used').siblings().addClass('profile_hidden'); 
+  $('#coupons_used_ref').addClass('my_coupons_menu_underlined'); 
+  $('#coupons_used_ref').siblings().removeClass('my_coupons_menu_underlined');
+});
+$(document).on("click", '#coupons_lated_ref', function(event) {
+  event.preventDefault();
+  $('#coupons_lated').removeClass('profile_hidden');
+  $('#coupons_lated').siblings().addClass('profile_hidden');
+  $('#coupons_lated_ref').addClass('my_coupons_menu_underlined'); 
+  $('#coupons_lated_ref').siblings().removeClass('my_coupons_menu_underlined'); 
+});
+
+
+/*Раскрытие инпутов для редактирования имени/города по клику на Изменить*/
+
+$(document).on("click", '#change_name_button', function(event) {
+  event.preventDefault();
+  $('#change_name_block').toggle();
+});
+$(document).on("click", '#change_city_button', function(event) {
+  event.preventDefault();
+  $('#change_city_block').toggle();
+});
+$(document).on("click", '#change_email_button', function(event) {
+  event.preventDefault();
+  $('#change_email_block').toggle();
+});
+$(document).on("click", '#change_pass_button', function(event) {
+  event.preventDefault();
+  $('#change_pass_block').toggle();
+});
+
+/*Подтверждение информации в блоке изменения личных данных */
+$(document).on("click", '#personal_name_save', function(event) {
+  event.preventDefault();
+  $('#personal_name').text($(this).siblings().val());
+  $(this).parent().toggle();
+});
+
+$(document).on("click", '#personal_city_save', function(event) {
+  event.preventDefault();
+  $('#personal_city').text($(this).siblings().val());
+  $(this).parent().toggle();
+});
+
+$(document).on("click", '#personal_email_save', function(event) {
+  event.preventDefault();
+  $('#personal_email').text($(this).siblings().val());
+  $(this).parent().toggle();
+});
+
+$(document).on("click", '#personal_password_save', function(event) {
+  event.preventDefault();
+  $('#personal_password').text($(this).siblings().val());
+  $(this).parent().toggle();
+});
 
 
 /*Phone mask*/

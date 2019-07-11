@@ -1,3 +1,4 @@
+
 .row {
     display: flex;
     flex-direction: row;
@@ -16,12 +17,14 @@
     margin-bottom: 80px;
 }
 .private_zone .container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .private_menu_block, .private_info_block {
     width: 100%;
+    
 }
 .private_menu_block .container {
     display: flex;
@@ -30,17 +33,36 @@
 }
 .private_zone .select {
     width: 100%;
+    display: flex;
+    justify-content: center;
     font-size: 13px;
     color: #000000;
     font-family: "Roboto";
     font-weight: 400;
+    position: relative;
 }
 .dropdown {
-    display: none;
     position: absolute;
+    left:0;
+    right: 0;
+    z-index: 100;
+    
+}
+.dropdown1920 {
+    display: none;
+}
+ul.dropdown  {
+    margin-top: 0;
+    display: block;
+}
+.private_zone a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
 }
 .private_zone .select .option {
-    margin: 0 15px;
+    /*width: 100%;*/
+    /*max-width: 290px;*/
     padding-left: 10px;
     height: 46px;
     line-height: 46px;
@@ -50,19 +72,21 @@
     background-color: #f3f6f8;
     border: 1px solid #e3eaf1;
     cursor: pointer;
-    border-left: 2px solid #ffb200;
+    
     
     
 }
 
 .private_zone .select .option_main{
-    display: block;
+    margin: 0;
+    width: 100%;
+    /*max-width: 290px;*/
     background: url('../../img/mainpage/bottom.png') no-repeat 95%;
     background-color: #f3f6f8;
     border-left: 2px solid #ffb200;
 }
 
-.private_zone .select .exit{
+.private_zone .select .option_exit{
     background: url('../../img/profile/close.png') no-repeat 95%;
     background-color: #f3f6f8;
 }
@@ -103,13 +127,35 @@
     cursor: pointer;
     background: url('../../img/profile/eddit_icon.png') no-repeat 10%;
 }
+.private_zone .how_return {
+    width: 100px;
+    text-align: right;
+    font-size: 11px;
+    line-height: 35px;
+    color: #ffb200;
+    font-family: "Roboto";
+    font-weight: 400;
+    cursor: pointer;
+    background: url('../../img/profile/eddit_icon.png') no-repeat 10%;
+}
+.my_coupons>.row {
+    border: none;
+}
 .personal_name_change {
     width: 100%;
-   /* display: none;*/
+    display: none;
 }
 .personal_city_change {
     width: 100%;
-    /*display: none;*/
+    display: none;
+}
+.personal_email_change {
+    width: 100%;
+    display: none;
+}
+.personal_password_change {
+    width: 100%;
+    display: none;
 }
 
 .private_zone .button {
@@ -117,7 +163,6 @@
     background-color: #ffb200;
 }
 .personal_info {
-    margin: 0 15px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -158,11 +203,43 @@
 }
 
 .private_zone_block {
+    box-sizing: border-box;
     width: 100%;
+    padding: 0 15px;
     margin-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.profile_hidden {
+    display: none!important;
+}
+
+.my_coupons_menu ul {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0;
+    font-size: 14px;
+    height: 48px;
+    line-height: 45px;
+    background-color: #f3f6f8;
+    border: 1px solid #e3eaf1;
+}
+.my_coupons_menu ul li {
+}
+
+.my_coupons_menu_underlined {
+    border-bottom: 3px solid #243942;
+}
+.border-left-yellow {
+    border-left: 2px solid #ffb200!important;
+}
+
+
+.private_zone .cards-block {
+    align-items: flex-end;
 }
 
 
@@ -197,4 +274,20 @@
     .private_zone .select .option_main {
         display: none;
     }
+    .private_zone .select  {
+        width: 300px;
+        justify-content: flex-start;
+        align-self: flex-start;
+    }
+    .dropdown {
+        display: none!important;
+    }
+   .dropdown1920 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 320px;
+    }
+    
+    
 }
