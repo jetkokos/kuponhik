@@ -1,4 +1,3 @@
-
 .row {
     display: flex;
     flex-direction: row;
@@ -46,8 +45,8 @@
     left:0;
     right: 0;
     z-index: 100;
-    
 }
+
 .dropdown1920 {
     display: none;
 }
@@ -242,6 +241,80 @@ ul.dropdown  {
     align-items: flex-end;
 }
 
+.header .pers_cab_icon {
+    padding-left: 30px;
+    background: url('../../img/profile/pers.png') no-repeat 5%;
+}
+.header .ur {
+    padding-left: 30px;
+    background: url('../../img/profile/ur.png') no-repeat 5%;
+}
+.pers_cab {
+    position: relative;
+    display: flex;
+}
+.pers_cab .pers_name {
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 80px;
+    background: url('../../img/profile/pers2.png') no-repeat 5%;
+    background-color: #f3f6f8;
+    background-size: 15%;
+    height: 75px;
+}
+.pers_cab .pers_name span {
+    font-family: "Roboto";
+    color: #000000;
+    font-size: 14px;
+}
+.pers_cab .pers_name span:first-child {
+    width: 654px;
+    font-size: 16px;
+    line-height: 18px;
+    
+    font-weight: 700;
+}
+.pers_cab .pers_cab_dropdown{
+    display: none;
+    position: absolute;
+    opacity: 1;
+    top: 48px;
+    left: -50px;
+}
+.pers_cab .pers_cab_dropdown .dropdown1920{
+   margin-top: 0;
+}
+.pers_cab .pers_cab_dropdown .option{
+    box-sizing: border-box;
+    width: 300px;
+    border: 1px solid #e3eaf1;
+   
+}
+.pers_cab .pers_cab_dropdown a{
+    color: #000000;
+    background-color: #f3f6f8;
+    height: 15px;
+    
+}
+
+.pers_cab .pers_cab_dropdown .option_exit a {
+    background: url('../../img/profile/close.png') no-repeat 95%;
+    background-color: #f3f6f8;
+}
+.pers_cab .menu-triangle1 {
+    display: block;
+    position: absolute;
+    left: 90px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #f3f6f8;
+}
 
 /*_______________________________________________*/
 @media screen and (min-width: 750px) {

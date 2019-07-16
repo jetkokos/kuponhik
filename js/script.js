@@ -195,6 +195,7 @@ $(document).on("click", '.pers_info_ref', function(event) {
   $('.option_main').text('Персональная информация');
   $('.pers_info_ref').parent().addClass('border-left-yellow'); 
   $('.pers_info_ref').parent().siblings().removeClass('border-left-yellow'); 
+  $('.pers_cab_dropdown').hide();
 
 });
 $(document).on("click", '.my_coupons_ref', function(event) {
@@ -205,6 +206,7 @@ $(document).on("click", '.my_coupons_ref', function(event) {
   $('.option_main').text('Мои купоны');
   $('.my_coupons_ref').parent().addClass('border-left-yellow'); 
   $('.my_coupons_ref').parent().siblings().removeClass('border-left-yellow'); 
+  $('.pers_cab_dropdown').hide();
 });
 $(document).on("click", '.profile_options_ref', function(event) {
   event.preventDefault();
@@ -214,6 +216,7 @@ $(document).on("click", '.profile_options_ref', function(event) {
   $('.option_main').text('Настройки профиля');
   $('.profile_options_ref').parent().addClass('border-left-yellow'); 
   $('.profile_options_ref').parent().siblings().removeClass('border-left-yellow'); 
+  $('.pers_cab_dropdown').hide();
 });
 
 /*Раскрытие пунктов меню Действительные/Просроченные/Мои */
@@ -282,6 +285,11 @@ $(document).on("click", '#personal_password_save', function(event) {
   event.preventDefault();
   $('#personal_password').text($(this).siblings().val());
   $(this).parent().toggle();
+});
+/*Меню личного кабинета*/
+$(document).on("click", '.pers_cab_dropdown_ref', function(event) {
+  event.preventDefault();
+  $('.pers_cab_dropdown').toggle();
 });
 
 
