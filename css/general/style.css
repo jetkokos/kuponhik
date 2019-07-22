@@ -111,6 +111,18 @@ ul {
 	line-height: 18px;
 }
 
+.additional_row {
+    display: flex;
+    
+}
+.additional_row a {
+    padding: 0!important;
+}
+.additional_row a span {
+    padding: 0 5px!important;
+    width: 19px;
+    height: 17px;
+}
 /*_________________________________________________________________________________________*/
 @media screen and (min-width: 750px) {
 	h1 {
